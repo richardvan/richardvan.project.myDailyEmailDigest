@@ -6,7 +6,6 @@ function sayHello() {
     console.log('Hello 3');
     console.log('Hello 4');
 }
-sayHello();
 
 
 function sendEmail(){
@@ -32,4 +31,3 @@ function sendEmail(){
 
 
 }
-sendEmail();
