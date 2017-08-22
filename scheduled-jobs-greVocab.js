@@ -77,10 +77,12 @@ function sendEmail(){
 							'<br>' +
 							'<br>' +
 							'Other stuff to remember<br>' +
-							'   breath horizontally - (todo_add more pictures, details, sheet)<br>' +
-							'   daily quote - (todo_add similiar dictionary to grevocab)<br>' +
-							'   read<br>' +
-							'   chinese learning (todo_add my name)<br>' +
+							'&ensp;&ensp;&ensp;&ensp;    - breath horizontally - (todo_add more pictures, details, sheet)<br>' +
+							'&ensp;&ensp;&ensp;&ensp;    - daily quote - (todo_add similiar dictionary to grevocab)<br>' +
+							'&ensp;&ensp;&ensp;&ensp;    - read<br>' +
+							'&ensp;&ensp;&ensp;&ensp;    &#9634; chinese learning (todo_add my name)<br>' +
+							'';
+
 	var content = new helper.Content('text/html', contentString);
 	console.log ("  ------> contentString: %s", contentString);
 
