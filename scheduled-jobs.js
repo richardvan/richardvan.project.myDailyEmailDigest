@@ -12,7 +12,7 @@ sayHello();
 function sendEmail(){
 	var helper = require('sendgrid').mail;
 	var from_email = new helper.Email('herokuDailyEmailDigest@shrouded-brook.com');
-	var to_email = new helper.Email('vanrichard@.com');
+	var to_email = new helper.Email('vanrichard@gmail.com');
 	var subject = '[myDailyEmailDigest] for ___todo_date_update___';
 	var content = new helper.Content('text/plain', 'Hello, Hong, time to put in quickly a bad looking version of your stuff and one gre word!');
 	var mail = new helper.Mail(from_email, subject, to_email, content);
