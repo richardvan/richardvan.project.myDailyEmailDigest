@@ -64,7 +64,7 @@ function sendEmail(){
 	var currentGREword = getNextGREword();
 
 	var helper = require('sendgrid').mail;
-	var from_email = new helper.Email('myDailyEmailDigest');
+	var from_email = new helper.Email('testing hehe <herokuDailyEmailDigest@shrouded-brook.com>');
 	var to_email = new helper.Email('vanrichard@gmail.com');
 	var subject = '[#GREvocabulary] ' + currentGREword;
 	console.log ("  ------> subject: %s", subject);
