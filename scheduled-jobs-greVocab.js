@@ -7,7 +7,7 @@ function sayHello() {
     console.log('Hello 4');
 }
 
-
+var myPastGREwords = {};
 var myGREwordDictionary = {
 	// list from https://www.graduateshotline.com/gre-word-list.html
 	'introspection' 	:	"examining one's own thoughts and feelings",
@@ -34,12 +34,255 @@ var myGREwordDictionary = {
 	'curriculum'		:   "course of study",
 	'malevolent'		:   "malicious; evil; having or showing ill will",
 	'amalgamate'		:   "mix; combine; unite societies"
+
+
+	// xenophile (zen-uh-fahyl)	a person who is attracted to foreign peoples cultures
+	// drowsiness	feeling sleepy half asleep
+	// stray	wander lose one's way
+	// disrobe	undress
+	// acumen	Keen, quick, accurate insight or judgment
+	// suffocate	cause or have difficulty in breathing
+	// sporadic	happening from time to time
+	// scent	smell (especially pleasant)
+	// sequence	succession connected line of
+	// audacious	Bold
+	// affinity	close connection; relationship
+	// animosity	strong dislike
+	// heterogeneous	made up of different kinds
+	// fragile	easily injured broken or destroyed
+	// legacy	Bequest or inheritance
+	// massacre	cruel killing of a large number of people
+	// appease	make quiet or calm
+	// submerge	put under water liquid sink out of sight
+	// adulteration	making unpure; poorer in quality
+	// combustion	process of burning
+	// premature	doing or happening something before the right time
+	// shunned	avoided, kept away from
+	// anguish	severe suffering
+	// apt	well-suited; quick-witted
+	// conceal	hide keep secret
+	// grumble	to complain
+	// indigenous	native
+	// offhand	Without preparation or forethought
+	// loll	rest to sit or stand in a lazy way hang (dog's tongue)
+	// correlate	have a mutual relation
+	// somersault	rolling backward or forward (not sideways) movement
+	// abscond	to go away suddenly (to avoid arrest)
+	// edible	fit to be eaten/not poisonous
+	// extinguish	end the existence of/wipe or put out
+	// inquest	Legal or judicial inquiry, especially before a jury and especially made by a coroner into the cause of someone.s death
+	// surcharge	additional load/charge
+	// accolade	praise; approval
+	// conjoin	to join together
+	// timid	shy easily frightened
+	// opaqueness	dullness/not allowing light to pass through
+	// disallow	refuse to allow or accept as a correct
+	// abide	be faithful; to endure
+	// impermeable	that cannot be permeated
+	// console	give comfort or sympathy to
+	// warrant	authority written order guarantee
+	// acclaimed	welcomed with shouts and approval
+	// extinct	no longer active
+	// reminiscent	suggest something in the past
+	// catalyst	substance that causes speeding up
+	// embezzle	use in a wrong way for one's own benefit
+	// shallow	little depth; not earnest
+	// clientele	customers
+	// brittle	easily broken
+	// negligent	taking too little care
+	// affable	polite and friendly
+	// salvage	the saving of property from loss
+	// moribund	in a dying state; near death
+	// relapse	fall back again
+	// dangle	hand or swing loosely
+	// ascend	go or come up
+	// asterisk	the mark * (e.g.. omitted letters)
+	// yarn	tale story fibers for knitting
+	// arrogance	proud; superior manner of behaviour
+	// divergence	getting farther apart from a point
+	// allegiance	duty support loyalty
+	// vigorous	strong energetic
+	// dwarf	person much smaller the usual size
+	// livid	Furiously angry, enraged
+	// rejuvenation	becoming young in nature or appearance
+	// fragrant	sweet-smelling
+	// judicious	sound in judgment; wise
+	// hospitable	liking to give hospitality
+	// odor	smell
+	// scribble	write hastily
+	// ameliorate	improve; make better
+	// poseur	a person who attempts to impress by acting unlike himself
+	// sawdust	tiny bits of wood
+	// narcissism	Self-love
+	// dullard	a stupid, insensitive person
+	// succumb	yield, die
+	// sluggard	lazy slow-moving person
+	// flop	fail/move/fall clumsily
+	// ingest	take in by swallowing
+	// reiterate	say or do again several times
+	// derivative	unoriginal; obtained from another source
+	// defer	postpone
+	// eloquence	fluent speaking skillful use of language
+	// clot	half-solid lump formed from liquid
+	// commuter	person who travels regularly
+	// weigh	measure hoe heavy something is
+	// steeply	rising or falling sharply
+	// torque	twisting force causing rotation
+	// benefactor	person who has given help
+	// moderation	quality of being limited; not extreme
+	// plea	request
+	// invincible	too strong to be defeated
+	// enduring	lasting
+	// flimsy	lacking solidarity, strength
+	// tadpole	form of a frog when it leaves the egg
+	// turmoil	trouble disturbance
+	// sanity	health of mind soundness of judgment
+	// cryptic	secret with a hidden meaning
+	// gallant	brave,behaves well with women
+	// endorse	write one's name on the back of
+	// sponge	porous rubber for washing live at once expense
+	// volatile	changeable inconstant fickle unstable explosive
+	// alloy	to debase by mixing with something inferior
+	// reconcile	settle a quarrel restore peace
+	// fission	splitting or division (esp. of cells)
+	// commemorate	keep the memory of
+	// gait	a manner of walking, stepping, or running
+	// dormant	in a state of inactivity but awaiting development
+	// shard	A piece of broken pottery
+	// chisel	steel tool for shaping materials
+	// encapsulate	enclose in capsule
+	// complaisant	trying to please; obliging
+	// grievous	causing grief or pain; serious dire grave
+	// hypocrisy	falsely making oneself appear to be good
+	// enzyme	catalyst
+	// eradicate	get rid of pull up by the roots
+	// infuriate	fill with fury or rage
+	// Lambaste	attack verbally
+	// sanction	approval (by authority) penalty
+	// engulf	swallow up
+	// euphoria	elation state of pleasant excitement
+	// renowned	celebrated; famous
+	// colloquial	involving or using conversation.
+	// evoke	call up bring out
+	// mischievous	harmful; causing mischief
+	// implicit	implied though; not plainly expressed
+	// abysmal	extreme bad
+	// dote	show much fondness center one's attention
+	// riddle	puzzling person or thing
+	// misogynist	one who hates women/females
+	// disproof	proof to the contrary
+	// sadastic	Cruel
+	// impromptu	without preparation
+	// inclined	directing the mind in a certain direction
+	// erratic	irregular in behaviour or opinion
+	// meticulous	giving great attention to details
+	// ambivalent	having both of two contrary meanings
+	// pertain	belong as a part have reference
+	// auxiliary	helping; supporting
+	// constrict	make tight or smaller
+	// luminary	star; light-giving body
+	// ossified	turned to bone; hardened like bone; Inflexible
+	// tonic	something giving strength or energy
+	// perish	be destroyed decay
+	// presentiment	anticipatory fear; premonition
+	// indistinct	not easily heard; seen clearly marked
+	// dupe	cheat make a fool of
+	// abstruse	difficult to comprehend; obscure
+	// turbulence	being uncontrollably violent
+	// connoisseur	a person with good judgement (e.g.. in art)
+	// aberration	straying away from what is normal
+	// extralegal	outside the law
+	// pest	destructive thing or a person who is nuisance
+	// parenthesis	sentence within another one something separated
+	// sophisticated	complex; subtle; refined
+	// ail	to cause pain, uneasiness, or trouble to.
+	// limp	lacking strength; walking unevenly
+	// arcane	known or understood by very few
+	// mite	A very small amount, portion, or particle
+	// edify	instruct; correct morally
+	// recuperate	become strong after illness loss exhaustion
+	// satiate	satisfy fully
+	// yeoman	man owning small estate; middle-class farmer
+	// fidelity	loyalty accuracy
+	// pluck	pull the feathers off pick (e.g.. flowers)
+	// perjury	willful FALSE statement unlawful act
+	// paradigm	a model example or pattern
+	// gullible	easily gulled
+	// sobriety	quality or condition of being sober
+	// tractable	easily controlled or guided
+	// writ	written order
+	// mesmerize	hypnotize
+	// predominate	have more power than others
+	// articulate	speak distinctly; connect by joints
+	// fleet	number of ships; quick-moving
+	// solvent	of the power of forming a solution
+	// dislodge	move force from the place occupied
+	// partisan	one-sided committed to a party biased or prejudiced
+	// spear	weapon with a metal point on a long shaft
+	// vivacious	lively high-spirited
+	// beguile	mislead or delude; cheat; pass time
+	// coagulation	change to a thick and solid state
+	// foolproof	incapable of failure or error
+	// liberality	free giving; generosity
+	// elaborate	worked out with much care in great detail
+	// brass	yellow metal (mixing copper and zinc)
+	// permeate	spread into every part of
+	// malleable	yielding easily shaped; moldable; adapting
+	// suffice	be enough
+	// lampoon	publicly mock or ridicule
+	// immutable	that cannot be changed
+	// forgery	counterfeit
+	// patron	regular customer person who gives support
+	// cordial	warm and sincere
+	// retrograde	receding
+	// cumbersome	burdensome; heavy and awkward to carry
+	// sheath	cover for the blade of a weapon or a tool
+	// repel	refuse to accept/cause dislike
+	// unscathed	unharmed unhurt
+	// superimpose	put something on the top
+	// boisterous	noisy; restraint
+	// implosion	collapse; bursting inward
+	// centurion	leader of a unit of 100 soldiers
+	// knit	draw together; unite firmly
+	// pivotal	of great importance (others depend on it)
+	// enigma	something that is puzzling
+	// buoyant	able to float; light-hearted
+	// jabber	talk excitedly; utter rapidly
+	// treacherous	not to be trusted, perfidious
+	// bewilder	puzzle; confuse
+	// stride	walk with long steps
+	// garrulous	too talkative
+	// redeem	get back by payment compensate
+	// calipers	metal supports attached to the legs measuring instrument
+	// impede	hinder; get in the way of
+	// resuscitation	coming back to consciousness
+	// apartheid	brutal racial discrimination
+	// concur	agree in opinion happen together
+	// indulgent	inclined to indulge
+	// recitals	a number of performance of music
+	// woo	try to win
+	// misanthrope	person who hates mankind
+	// evasive	tending to evade
+	// eulogy	formal praise panegyric
+	// foster	nurture; care for
+	// pilferer	to steal, especially in small quantities
+	// refine	make or become pure cultural
+	// dexterity	skill (esp. in handling)
+	// bogus	sham; counterfeit; not genuine
+	// incongruous	out of place; not in harmony or agreement
+	// multifarious	varied; motley; greatly diversified
+	// skit	short piece of humorous writing
+	// repulsive	causing a feeling of disgust
+	// hapless	unlucky
+
+	// TODO - another flat file for the list best practice
+	// TODO - this is only first list of 5; https://www.graduateshotline.com/gre-word-list.html
 }
 
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
-	'adorn'				:   "add beauty; decorate",		// 8/22
-	'adorn2'				:   "add beauty twice"		// test
+	'adorn'				:   "add beauty; decorate",									// 8/22
+	'ambidextrous'		:   "able to use the left hand or the right equally well"	// 8/23
 }
 
 
@@ -81,7 +324,7 @@ function getPastGREwords(){
 	// var returnValue = myGREwordsSeenNETWORK;
 	// dictGREwordsSeen = myGREwordsSeenNETWORK
 
-	console.log ("  ------> return size: %i", Object.keys(returnValue).length);
+	console.log ("  ------>    return size: %i", Object.keys(returnValue).length);
 
 	return returnValue;
 }
@@ -99,7 +342,6 @@ function getPastGREwordsContent(dict){
 
 	for (var key in dict) {
 	    if (dict.hasOwnProperty(key)) {
-	        console.log(key, dict[key]);
 			console.log("  ------>    %s,%s", key, dict[key]);
 
 			returnValue = returnValue + '<b>' + key +'</b>: ' + dict[key] + '<br>';
@@ -114,55 +356,141 @@ function getPastGREwordsContent(dict){
 	return returnValue;
 }
 
+
+function classScheduleContent(){
+
+	var returnValue = 		'<h3>Class Schedule Fall 2017</h3>';
+
+	var today = new Date();
+	if(today.getDay() == 0) 	// sunday - return everything to get an overview
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-9:45am @ FMA110 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
+							'';
+	else if (today.getDay() == 1) // monday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'';
+	else if (today.getDay() == 2) // tuesday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
+							'';
+	else if (today.getDay() == 3) // wednesday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'';
+	else if (today.getDay() == 4) // thursday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
+							'';
+	else if (today.getDay() == 5) // friday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-9:45am @ FMA110 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
+							'';
+	else if (today.getDay() == 6) // saturday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
+							'';
+
+	return returnValue;
+}
+
 function getNextGREword(){
 
 	console.log ("  ------> calling getNextGREword()");
 
-	var keyToGet = 	getRandomInt(0, Object.keys(myGREwordDictionary).length - 1);
-	var returnValue = Object.keys(myGREwordDictionary)[keyToGet];
+	var returnValue;
 
-	console.log ("  ------> returnValue: %s", returnValue);
+	// only return words not seen before
+	var nextWord;
+
+	while (true){
+		var randomInt = getRandomInt(0, Object.keys(myGREwordDictionary).length - 1);
+		nextWord = Object.keys(myGREwordDictionary)[randomInt]
+		if (!myPastGREwords.hasOwnProperty(nextWord))
+			break;
+	};
+	returnValue = nextWord;
+
+	console.log ("  ------>    returnValue: %s", returnValue);
 
 	return returnValue;
 }
 
 
 function sendEmail(){
-	console.log ("  ----> calling sendEmail()");
+	console.log ("  ---> calling sendEmail()");
 
-	var pastGREwords = getPastGREwords();
-	var pastGREwordsContent = getPastGREwordsContent(pastGREwords);
+	myPastGREwords = getPastGREwords();
+	var pastGREwordsContent = getPastGREwordsContent(myPastGREwords);
 	var currentGREword = getNextGREword();
 
+
+	console.log ("  ------> [crafting sendgrid object]");
 	var helper = require('sendgrid').mail;
 	var from_email = new helper.Email('greVocabMockup@hongboDailyEmailDigest._todoUpdateThisCounter');
 	var to_email = new helper.Email('vanrichard@gmail.com');
 	var subject = '[#GREvocabulary] ' + currentGREword;
-	console.log ("  ------> subject: %s", subject);
+	console.log ("  ------>    subject: %s", subject);
 
-	var contentString = 	'Hello Hongbo,<br>' + 
+	var contentString = 	'[ start of message hongbo ]<br>' + 
 							'<br>' +
 							'<b>GRE Word of the DAY</b><br>' +
-							'<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
 							'<br>' +
+							'<h3>Steps for the Day:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [ochem] do another ochem module, read section in book, update class notes/examples<br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="_todo_">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; textbook:<a href="_todo_">Organic Chemistry</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource2:<a href="_todo_">Study Guide and Solutions Manual</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">htt://rosanlind.info</a><br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     read<br>' +
 							'<br>' +
-							'Other stuff to remember<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     check out rosalind.info (add in link) <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     do another ochem module (end this on __todo_check final date <br>' + 
+							classScheduleContent() +
+							'<br>' +
+							'<h3>List of past words sent thus far!</h3>' + 
+							pastGREwordsContent + 
+							'<br>' +
+							'<h3>Random TODOs</h3>' + 
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     connectTOcommonDATABASE__<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     autoUpdateOfSeenGREword<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     parser to display this list nice html format__<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     daily quote - (todo_add similiar dictionary to grevocab)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     chinese learning (todo_add my name)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     breath horizontally - (todo_add more pictures, details, sheet)<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     daily quote - (todo_add similiar dictionary to grevocab)<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     read<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     chinese learning (todo_add my name)<br>' +
 							'<br>' +
 							'<br>' +
 							'<br>' +
 							'<br>' +
-							'<b>GRE Words seen thus far</b><br>' +
-							'<h4>List of past words sent thus far!</h4><br>: ' + 
-							pastGREwordsContent +  '<br>' + 
-							'_____need________connectTOcommonDATABASE__<br>' +
-							'_____need________parser to display this list nice html format__<br>' +
+							'<h3>Random Tips to organize:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	always think "iterate"<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] after each podcast, write down the takeaway to employ in daily like<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] write on paper (iterate versions) morning ritual, goals for day, nightly ritual<br>' +
+							'<br>' +
 							'<br>' +
 							'<br>' +
 							'[ end of message hongbo ]' +
@@ -174,7 +502,7 @@ function sendEmail(){
 
 
 	var content = new helper.Content('text/html', contentString);
-	console.log ("  ------> contentString: %s", contentString);
+	console.log ("  ------>    contentString: %s", contentString);
 
 	var mail = new helper.Mail(from_email, subject, to_email, content);
 
@@ -189,11 +517,11 @@ function sendEmail(){
 	  console.log(response.statusCode);
 	  console.log(response.body);
 	  console.log(response.headers);
-	  console.log ("  ----> end sendEmail() callback");
+	  console.log ("  ---> end sendEmail() callback");
 	});
 
 
-	console.log ("  ----> end sendEmail() function");
+	console.log ("  ---> end sendEmail() function");
 }
 
 
