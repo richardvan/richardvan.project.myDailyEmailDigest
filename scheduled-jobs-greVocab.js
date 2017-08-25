@@ -281,8 +281,9 @@ var myGREwordDictionary = {
 
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
-	'adorn'				:   "add beauty; decorate",									// 8/22
-	'ambidextrous'		:   "able to use the left hand or the right equally well"	// 8/23
+	'agile'				:   "active; quick-moving",									// 8/24
+	'ambidextrous'		:   "able to use the left hand or the right equally well",	// 8/23
+	'adorn'				:   "add beauty; decorate"									// 8/22
 }
 
 
@@ -364,55 +365,55 @@ function classScheduleContent(){
 	var today = new Date();
 	if(today.getDay() == 0) 	// sunday - return everything to get an overview
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-9:45am @ FMA110 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
 							'';
 	else if (today.getDay() == 1) // monday
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
 							'';
 	else if (today.getDay() == 2) // tuesday
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
 							'';
 	else if (today.getDay() == 3) // wednesday
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
 							'';
 	else if (today.getDay() == 4) // thursday
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
 							'';
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-9:45am @ FMA110 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
 							'';
 	else if (today.getDay() == 6) // saturday
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday<b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
 							'';
 
@@ -464,34 +465,38 @@ function sendEmail(){
 							'<br>' +
 							'<h3>Steps for the Day:</h3>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [ochem] do another ochem module, read section in book, update class notes/examples<br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="_todo_">Organic Chemistry as a Second Language</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; textbook:<a href="_todo_">Organic Chemistry</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource2:<a href="_todo_">Study Guide and Solutions Manual</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">htt://rosanlind.info</a><br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     read<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="https://www.mendeley.com/viewer/?fileId=7e4e8dde-1fcb-2c69-0f0a-87159da834b1&documentId=cb36f792-db04-3fb6-b8f3-d83216770c51">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; textbook:<a href="https://www.mendeley.com/viewer/?fileId=07da52dc-3b1a-f3f7-2679-7f71273f33e5&documentId=b561325b-4db0-3f23-bad9-b361f12c0e22">Organic Chemistry</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource2:<a href="https://www.mendeley.com/viewer/?fileId=01e42d20-3a9d-1213-2343-28e83a983385&documentId=edf23ef7-df7d-34b1-b259-c8268e7f8882">Study Guide and Solutions Manual</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [mendeley] my online library:<a href="https://www.mendeley.com/library/">mendeley</a><br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     read kindle chapter, blinkist<br>' +
 							'<br>' +
 							classScheduleContent() +
 							'<br>' +
-							'<h3>List of past words sent thus far!</h3>' + 
-							pastGREwordsContent + 
 							'<br>' +
 							'<h3>Random TODOs</h3>' + 
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     add dates where necessary like subject and also the class schedule <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     connectTOcommonDATABASE__<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     autoUpdateOfSeenGREword<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     parser to display this list nice html format__<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     daily quote - (todo_add similiar dictionary to grevocab)<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     chinese learning (todo_add my name)<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     chinese learning (add more words to learn _todo_online_recommended_ones)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     breath horizontally - (todo_add more pictures, details, sheet)<br>' +
-							'<br>' +
-							'<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     check out https://code.visualstudio.com/ to use instead of sublime<br>' +
 							'<br>' +
 							'<br>' +
 							'<h3>Random Tips to organize:</h3>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	always think "iterate"<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	steps -> short-term goals -> long-term goals -> dreams"<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] after each podcast, write down the takeaway to employ in daily like<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] write on paper (iterate versions) morning ritual, goals for day, nightly ritual<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [crashcourse_notes] SQ3R - (survey,question,read,recite,review)<br>' +
 							'<br>' +
 							'<br>' +
+							'<h3>List of past words sent thus far!</h3>' + 
+							pastGREwordsContent + 
 							'<br>' +
 							'[ end of message hongbo ]' +
 
