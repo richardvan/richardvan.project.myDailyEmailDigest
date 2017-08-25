@@ -33,48 +33,49 @@ var myGREwordDictionary = {
 	'renovate'			:   "restore something to better condition",
 	'curriculum'		:   "course of study",
 	'malevolent'		:   "malicious; evil; having or showing ill will",
-	'amalgamate'		:   "mix; combine; unite societies"
+	'amalgamate'		:   "mix; combine; unite societies",
+	'xenophile'			:   "a person who is attracted to foreign peoples cultures",
+	'drowsiness'			:   "feeling sleepy half asleep",
+	'stray'				:   "wander lose one's way",
+	'disrobe'			:   "undress",
+	'acumen'			:   "Keen, quick, accurate insight or judgment",
+	'suffocate'			:   "cause or have difficulty in breathing",
+	'sporadic'			:   "happening from time to time",
+	'scent'				:   "smell (especially pleasant)",
+	'sequence'			:   "succession connected line of",
+	'audacious'			:   "Bold",
+	'affinity'			:   "close connection; relationship",
+	'animosity'			:   "strong dislike",
+	'heterogeneous'		:   "made up of different kinds",
+	'fragile'			:   "easily injured broken or destroyed",
+	'legacy'			:   "Bequest or inheritance",
+	'massacre'			:   "cruel killing of a large number of people",
+	'appease'			:   "make quiet or calm",
+	'submerge'			:   "put under water liquid sink out of sight",
+	'adulteration'		:   "making unpure; poorer in quality",
+	'combustion'		:   "process of burning",
+	'premature'			:   "doing or happening something before the right time",
+	'shunned'			:   "avoided, kept away from",
+	'anguish'			:   "severe suffering",
+	'apt'				:   "well-suited; quick-witted",
+	'conceal'			:   "hide keep secret",
+	'grumble'			:   "to complain",
+	'indigenous'		:   "native",
+	'offhand'			:   "Without preparation or forethought",
+	'loll'				:   "rest to sit or stand in a lazy way hang (dog's tongue)",
+	'correlate'			:   "have a mutual relation",
+	'somersault'		:   "rolling backward or forward (not sideways) movement",
+	'abscond'			:   "to go away suddenly (to avoid arrest)",
+	'edible'			:   "fit to be eaten/not poisonous",
+	'extinguish'		:   "end the existence of/wipe or put out",
+	'inquest'			:   "Legal or judicial inquiry, especially before a jury and especially made by a coroner into the cause of someone.s death",
+	'surcharge'			:   "additional load/charge",
+	'accolade'			:   "praise; approval",
+	'conjoin'			:   "to join together",
+	'timid'				:   "shy easily frightened"
 
 
-	// xenophile (zen-uh-fahyl)	a person who is attracted to foreign peoples cultures
-	// drowsiness	feeling sleepy half asleep
-	// stray	wander lose one's way
-	// disrobe	undress
-	// acumen	Keen, quick, accurate insight or judgment
-	// suffocate	cause or have difficulty in breathing
-	// sporadic	happening from time to time
-	// scent	smell (especially pleasant)
-	// sequence	succession connected line of
-	// audacious	Bold
-	// affinity	close connection; relationship
-	// animosity	strong dislike
-	// heterogeneous	made up of different kinds
-	// fragile	easily injured broken or destroyed
-	// legacy	Bequest or inheritance
-	// massacre	cruel killing of a large number of people
-	// appease	make quiet or calm
-	// submerge	put under water liquid sink out of sight
-	// adulteration	making unpure; poorer in quality
-	// combustion	process of burning
-	// premature	doing or happening something before the right time
-	// shunned	avoided, kept away from
-	// anguish	severe suffering
-	// apt	well-suited; quick-witted
-	// conceal	hide keep secret
-	// grumble	to complain
-	// indigenous	native
-	// offhand	Without preparation or forethought
-	// loll	rest to sit or stand in a lazy way hang (dog's tongue)
-	// correlate	have a mutual relation
-	// somersault	rolling backward or forward (not sideways) movement
-	// abscond	to go away suddenly (to avoid arrest)
-	// edible	fit to be eaten/not poisonous
-	// extinguish	end the existence of/wipe or put out
-	// inquest	Legal or judicial inquiry, especially before a jury and especially made by a coroner into the cause of someone.s death
-	// surcharge	additional load/charge
-	// accolade	praise; approval
-	// conjoin	to join together
-	// timid	shy easily frightened
+	
 	// opaqueness	dullness/not allowing light to pass through
 	// disallow	refuse to allow or accept as a correct
 	// abide	be faithful; to endure
@@ -281,6 +282,7 @@ var myGREwordDictionary = {
 
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
+	'gerontocracy'		:   "government ruled by old people",						// 8/25
 	'agile'				:   "active; quick-moving",									// 8/24
 	'ambidextrous'		:   "able to use the left hand or the right equally well",	// 8/23
 	'adorn'				:   "add beauty; decorate"									// 8/22
