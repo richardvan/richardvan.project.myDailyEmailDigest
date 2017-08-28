@@ -282,6 +282,7 @@ var myGREwordDictionary = {
 
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
+	'endeavor'			:   "to make an effort, to try very hard",
 	'aggravate'			:   "make worse; irritate",
 	'gerontocracy'		:   "government ruled by old people",						// 8/25
 	'agile'				:   "active; quick-moving",									// 8/24
@@ -470,7 +471,7 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud drive] <a href="https://drive.google.com">google drive</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [ochem] do another ochem module, read section in book, update class notes/examples<br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="https://www.mendeley.com/viewer/?fileId=7e4e8dde-1fcb-2c69-0f0a-87159da834b1&documentId=cb36f792-db04-3fb6-b8f3-d83216770c51">Organic Chemistry as a Second Language</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; textbook:<a href="https://www.mendeley.com/viewer/?fileId=07da52dc-3b1a-f3f7-2679-7f71273f33e5&documentId=b561325b-4db0-3f23-bad9-b361f12c0e22">Organic Chemistry</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; textbook:<a href="https://www.mendeley.com/viewer/?fileId=40ce8952-8777-3ecd-1eff-6ba5e6dac425&documentId=a10d048b-e995-30ba-a5de-cfba42babedc">Organic Chemistry</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource2:<a href="https://www.mendeley.com/viewer/?fileId=01e42d20-3a9d-1213-2343-28e83a983385&documentId=edf23ef7-df7d-34b1-b259-c8268e7f8882">Study Guide and Solutions Manual</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' + 
