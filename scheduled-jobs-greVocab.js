@@ -390,13 +390,16 @@ function classScheduleContent(){
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy Prof OH)	10:00am-11:00am @ FMA102 <br>' 
 							'';
 	else if (today.getDay() == 2) // tuesday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem Prof OH) 		11:40am-1:00pm @ CHE217B <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241si(O Chem SI)		 	 5:30pm-6:30pm @ _todo_ <br>' +
 							'';
 	else if (today.getDay() == 3) // wednesday
 		returnValue = 		returnValue +
@@ -407,12 +410,13 @@ function classScheduleContent(){
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem Prof OH) 		11:40am-1:00pm @ CHE217B <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
 							'';
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-9:45am @ FMA110 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-11:20am @ FMA112 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
 							'';
 	else if (today.getDay() == 6) // saturday
@@ -468,11 +472,16 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
 							'<br>' +
 							'<h3>Steps for the Day:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [school] <a href="webcampus.unlv.edu/webapps/login/">webcampus</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud drive] <a href="https://drive.google.com">google drive</a><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [ochem] do another ochem module, read section in book, update class notes/examples<br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="https://www.mendeley.com/viewer/?fileId=7e4e8dde-1fcb-2c69-0f0a-87159da834b1&documentId=cb36f792-db04-3fb6-b8f3-d83216770c51">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [chem241_organic_chemistry] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="https://www.mendeley.com/viewer/?fileId=07da52dc-3b1a-f3f7-2679-7f71273f33e5&documentId=b561325b-4db0-3f23-bad9-b361f12c0e22">Organic Chemistry as a Second Language</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; textbook:<a href="https://www.mendeley.com/viewer/?fileId=40ce8952-8777-3ecd-1eff-6ba5e6dac425&documentId=a10d048b-e995-30ba-a5de-cfba42babedc">Organic Chemistry</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource2:<a href="https://www.mendeley.com/viewer/?fileId=01e42d20-3a9d-1213-2343-28e83a983385&documentId=edf23ef7-df7d-34b1-b259-c8268e7f8882">Study Guide and Solutions Manual</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol434_mammalogy] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="https://play.google.com/books/reader?printsec=frontcover&output=reader&id=CAq5BgAAQBAJ&pg=GBS.PR8">lecture textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol468_histology] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource1:<a href="http://webpac.library.unlv.edu/search~S1/?searchtype=.&searcharg=b5498661">lecture textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [read textbook] <a href="https://www.mendeley.com/library/g">mendeley</a><br>' +
@@ -482,8 +491,7 @@ function sendEmail(){
 							classScheduleContent() +
 							'<br>' +
 							'<br>' +
-							'<h3>Random TODOs</h3>' + 
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     add dates where necessary like subject and also the class schedule <br>' +
+							'<h3>Random TODOs</h3>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     connectTOcommonDATABASE__<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     autoUpdateOfSeenGREword<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     parser to display this list nice html format__<br>' +
