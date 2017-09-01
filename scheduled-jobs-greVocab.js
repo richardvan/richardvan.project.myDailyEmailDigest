@@ -390,7 +390,7 @@ function classScheduleContent(){
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy Prof OH)	10:00am-11:00am @ FMA102 <br>' 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy Prof OH)	10:00am-11:00am @ FMA102 <br>' +
 							'';
 	else if (today.getDay() == 2) // tuesday
 		returnValue = 		returnValue +
