@@ -35,7 +35,7 @@ var myGREwordDictionary = {
 	'malevolent'		:   "malicious; evil; having or showing ill will",
 	'amalgamate'		:   "mix; combine; unite societies",
 	'xenophile'			:   "a person who is attracted to foreign peoples cultures",
-	'drowsiness'			:   "feeling sleepy half asleep",
+	'drowsiness'		:   "feeling sleepy half asleep",
 	'stray'				:   "wander lose one's way",
 	'disrobe'			:   "undress",
 	'acumen'			:   "Keen, quick, accurate insight or judgment",
@@ -72,32 +72,32 @@ var myGREwordDictionary = {
 	'surcharge'			:   "additional load/charge",
 	'accolade'			:   "praise; approval",
 	'conjoin'			:   "to join together",
-	'timid'				:   "shy easily frightened"
+	'timid'				:   "shy easily frightened",
 
 
 	
-	// opaqueness	dullness/not allowing light to pass through
-	// disallow	refuse to allow or accept as a correct
-	// abide	be faithful; to endure
-	// impermeable	that cannot be permeated
-	// console	give comfort or sympathy to
-	// warrant	authority written order guarantee
-	// acclaimed	welcomed with shouts and approval
-	// extinct	no longer active
-	// reminiscent	suggest something in the past
-	// catalyst	substance that causes speeding up
-	// embezzle	use in a wrong way for one's own benefit
-	// shallow	little depth; not earnest
-	// clientele	customers
-	// brittle	easily broken
-	// negligent	taking too little care
-	// affable	polite and friendly
-	// salvage	the saving of property from loss
-	// moribund	in a dying state; near death
-	// relapse	fall back again
-	// dangle	hand or swing loosely
-	// ascend	go or come up
-	// asterisk	the mark * (e.g.. omitted letters)
+	'opaqueness'		:   "dullness/not allowing light to pass through",
+	'disallow'			:   "efuse to allow or accept as a correct",
+	'abide'				:   "be faithful; to endure",
+	'impermeable'		:   "that cannot be permeated",
+	'console'			:   "give comfort or sympathy to",
+	'warrant'			:   "authority written order guarantee",
+	'acclaimed'			:   "welcomed with shouts and approval",
+	'extinct'			:   "no longer active",
+	'reminiscent'		:   "suggest something in the past",
+	'catalyst'			:   "substance that causes speeding up",
+	'embezzle'			:   "use in a wrong way for one's own benefit",
+	'shallow'			:   "little depth; not earnest",
+	'clientele'			:   "customers",
+	'brittle'			:   "easily broken",
+	'negligent'			:   "taking too little care",
+	'affable'			:   "polite and friendly",
+	'salvage'			:   "the saving of property from loss",
+	'moribund'			:   "in a dying state; near death",
+	'relapse'			:   "fall back again",
+	'dangle'			:   "hand or swing loosely",
+	'ascend'			:   "go or come up",
+	'asterisk'			:   "the mark * (e.g.. omitted letters)"
 	// yarn	tale story fibers for knitting
 	// arrogance	proud; superior manner of behaviour
 	// divergence	getting farther apart from a point
@@ -282,6 +282,22 @@ var myGREwordDictionary = {
 
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
+
+	'indigenous'		:   "native",												// 9/12
+	'scent'				:   "smell (especially pleasant)",
+	'ambiguous'			:   "doubtful; uncertain",
+	'extinguish'		:   "end the existence of/wipe or put out",
+	'premature'			:   "doing or happening something before the right time",
+	'antidote' 			:	"medicine used against a poison or a disease",
+	'sporadic'			:   "happening from time to time",
+	'suffocate'			:   "cause or have difficulty in breathing",
+	'loll'				:   "rest to sit or stand in a lazy way hang (dog's tongue)",
+	'fragile'			:   "easily injured broken or destroyed",
+	'stray'				:   "wander lose one's way",
+	'somersault'		:   "rolling backward or forward (not sideways) movement",
+	'affinity'			:   "close connection; relationship",
+
+
 	'endeavor'			:   "to make an effort, to try very hard",
 	'aggravate'			:   "make worse; irritate",
 	'gerontocracy'		:   "government ruled by old people",						// 8/25
@@ -475,8 +491,10 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
 							'<br>' +
 							'<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud _drive] <a href="https://drive.google.com">google drive</a><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [school] <a href="webcampus.unlv.edu/webapps/login/">webcampus</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [email] <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">gmail</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [reminders] <a href="https://chrome.google.com/webstore/detail/boomerang-for-gmail/mdanidgdpmkimeiiojknlnekblgmpdll?hl=en">boomerang</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud_drive] <a href="https://drive.google.com">google</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud_drive] <a href="https://www.amazon.com/ap/signin?clientContext=133-2459284-1522832&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&siteState=https%3A%2F%2Fwww.amazon.com%2Fclouddrive%2Fref%3Ds9_acss_bw_cg_UASNAVBE_1a1_w%3F_encoding%3DUTF8%26mgh%3D1%26ref_%3DBN_US_C_U_Z_D_CD_CG_417_SINV%26ref_%3Ds9_acss_bw_cg_UASNAVBE_1a1_w%26sf%3D1&marketPlaceId=ATVPDKIKX0DER&pageId=photos_authportal_us&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fclouddrive%2Fauth&openid.assoc_handle=amzn_photos_us&openid.oa2.response_type=token&openid.mode=checkid_setup&openid.ns.oa2=http%3A%2F%2Fwww.amazon.com%2Fap%2Fext%2Foauth%2F2&openid.oa2.scope=clouddrive%3Aretailweb&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.oa2.client_id=iba%3Aamzn1.application-oa2-client.d45dc8aaf8fa47b0966a0dfbc75de512&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=172800">amazon</a><br>' +
 							classScheduleContent() +
 							'<br>' +
 							'<br>' +
@@ -519,6 +537,7 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] after each podcast, write down the takeaway to employ in daily like<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] write on paper (iterate versions) morning ritual, goals for day, nightly ritual<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] weekly review of current week that just happened (daily/weekly planning + robot mode); what went wrong and how to make more efficient<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] high quality work = time spent * intensity of focus<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [crashcourse_notes] SQ3R - (survey,question,read,recite,review)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource:<a href="__todoLINK___">__todo_title_</a> <br>' +
 							'<br>' +
