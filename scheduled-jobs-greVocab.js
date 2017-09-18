@@ -514,7 +514,7 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=2FM1r173p56NZYP85x6&preferencesSaved=">Web of Science(literature search)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://vertnet.org/">VertNet (museum collections)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol468_histology] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="http://webpac.library.unlv.edu/search~S1/?searchtype=.&searcharg=b5498661">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://www.mendeley.com/viewer/?fileId=7c4d76c6-5e73-bdc3-2dc9-6a62723ae041&documentId=b272b4af-1906-3efe-9c07-ecf0f21a602a">textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://www.mendeley.com/viewer/?fileId=5204ce22-bdbe-b953-3cdd-3aabf0206935&documentId=8e12728e-7fdd-3143-a91c-5e026fef8c31">lab book</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' +
