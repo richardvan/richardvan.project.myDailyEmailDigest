@@ -500,11 +500,12 @@ function sendEmail(){
 							'<br>' +
 							'<h3>Resouce Links:</h3>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;		 <a href="webcampus.unlv.edu/webapps/login/">webcampus</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.mendeley.com/viewer/?fileId=40ce8952-8777-3ecd-1eff-6ba5e6dac425&documentId=a10d048b-e995-30ba-a5de-cfba42babedc">textbook</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.mendeley.com/viewer/?fileId=01e42d20-3a9d-1213-2343-28e83a983385&documentId=edf23ef7-df7d-34b1-b259-c8268e7f8882">solutions manual</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://www.mendeley.com/viewer/?fileId=07da52dc-3b1a-f3f7-2679-7f71273f33e5&documentId=b561325b-4db0-3f23-bad9-b361f12c0e22">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [chem241_organic_chemistry] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_eld1YXhLb2FtaDQ">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_aGJ6YmppZzhMTG8">solutions manual</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_enlmbkhveDV3UGs">Organic Chemistry as a Second Language</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol434_mammalogy] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.mendeley.com/viewer/?fileId=770673b6-4124-b991-4c11-de41769cc915&documentId=794f3085-9415-3860-b0e9-68ca679cb32a">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y0VOdUdSS2xuajQ">textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://animaldiversity.org/">Animal Diversity Web (info/photos)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://naturalhistory.si.edu/mna/main.cfm?lang=_en">Smithsonian North American Mammals (info/geography)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://tolweb.org/tree/">Tree of Life (info/phylogeny)</a> <br>' +
@@ -514,8 +515,8 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=2FM1r173p56NZYP85x6&preferencesSaved=">Web of Science(literature search)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://vertnet.org/">VertNet (museum collections)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol468_histology] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://www.mendeley.com/viewer/?fileId=7c4d76c6-5e73-bdc3-2dc9-6a62723ae041&documentId=b272b4af-1906-3efe-9c07-ecf0f21a602a">textbook</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://www.mendeley.com/viewer/?fileId=5204ce22-bdbe-b953-3cdd-3aabf0206935&documentId=8e12728e-7fdd-3143-a91c-5e026fef8c31">lab book</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_RmFDS1NqTVZiYU0">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y3Zwd0hvcDMtVDQ">lab book</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [mendeley] <a href="https://www.mendeley.com/library/g">my mendeley</a><br>' +
@@ -538,6 +539,8 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] write on paper (iterate versions) morning ritual, goals for day, nightly ritual<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] weekly review of current week that just happened (daily/weekly planning + robot mode); what went wrong and how to make more efficient<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] high quality work = time spent * intensity of focus<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] do the hardest thing first thing in the morning off list of task for the day<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] pomodoro: 25 min investment into just working on something, no need to finish task<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [crashcourse_notes] SQ3R - (survey,question,read,recite,review)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource:<a href="__todoLINK___">__todo_title_</a> <br>' +
 							'<br>' +
