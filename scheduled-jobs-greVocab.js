@@ -283,6 +283,30 @@ var myGREwordDictionary = {
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
 
+
+	'malevolent'		:   "malicious; evil; having or showing ill will",			// 10/8
+	'renovate'			:   "restore something to better condition",
+	'abide'				:   "be faithful; to endure",
+	'philanthropist'	:	"one who loves mankind",
+	'curriculum'		:   "course of study",
+	'catalyst'			:   "substance that causes speeding up",
+	'legacy'			:   "Bequest or inheritance",
+	'massacre'			:   "cruel killing of a large number of people",
+	'acclaimed'			:   "welcomed with shouts and approval",
+	'affable'			:   "polite and friendly",
+	'entice'			:   "attract, lure",
+	'introvert'			:   "one who turns towards himself",
+	'warrant'			:   "authority written order guarantee",
+	'connote'			:   "Suggest or imply in addition to the precise, literal meaning",
+	'braggart'			:   "boastful",
+	'brittle'			:   "easily broken",										// 9/20
+	'surcharge'			:   "additional load/charge",
+	'accolade'			:   "praise; approval",
+	'audacious'			:   "Bold",
+	'amalgamate'		:   "mix; combine; unite societies",
+	'acumen'			:   "Keen, quick, accurate insight or judgment",
+	'disallow'			:   "efuse to allow or accept as a correct",
+	'equilibrium'		:   "state of being balanced",
 	'indigenous'		:   "native",												// 9/12
 	'scent'				:   "smell (especially pleasant)",
 	'ambiguous'			:   "doubtful; uncertain",
@@ -517,6 +541,8 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol468_histology] <br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_RmFDS1NqTVZiYU0">textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y3Zwd0hvcDMtVDQ">lab book</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.meddean.luc.edu/lumen/MedEd/Histo/frames/histo_frames.html">Loyola Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://medcell.med.yale.edu/histology/histology.php">Yale Medicine</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [mendeley] <a href="https://www.mendeley.com/library/g">my mendeley</a><br>' +
