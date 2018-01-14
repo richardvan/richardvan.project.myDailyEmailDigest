@@ -35,7 +35,7 @@ var myGREwordDictionary = {
 	'malevolent'		:   "malicious; evil; having or showing ill will",
 	'amalgamate'		:   "mix; combine; unite societies",
 	'xenophile'			:   "a person who is attracted to foreign peoples cultures",
-	'drowsiness'			:   "feeling sleepy half asleep",
+	'drowsiness'		:   "feeling sleepy half asleep",
 	'stray'				:   "wander lose one's way",
 	'disrobe'			:   "undress",
 	'acumen'			:   "Keen, quick, accurate insight or judgment",
@@ -72,32 +72,32 @@ var myGREwordDictionary = {
 	'surcharge'			:   "additional load/charge",
 	'accolade'			:   "praise; approval",
 	'conjoin'			:   "to join together",
-	'timid'				:   "shy easily frightened"
+	'timid'				:   "shy easily frightened",
 
 
 	
-	// opaqueness	dullness/not allowing light to pass through
-	// disallow	refuse to allow or accept as a correct
-	// abide	be faithful; to endure
-	// impermeable	that cannot be permeated
-	// console	give comfort or sympathy to
-	// warrant	authority written order guarantee
-	// acclaimed	welcomed with shouts and approval
-	// extinct	no longer active
-	// reminiscent	suggest something in the past
-	// catalyst	substance that causes speeding up
-	// embezzle	use in a wrong way for one's own benefit
-	// shallow	little depth; not earnest
-	// clientele	customers
-	// brittle	easily broken
-	// negligent	taking too little care
-	// affable	polite and friendly
-	// salvage	the saving of property from loss
-	// moribund	in a dying state; near death
-	// relapse	fall back again
-	// dangle	hand or swing loosely
-	// ascend	go or come up
-	// asterisk	the mark * (e.g.. omitted letters)
+	'opaqueness'		:   "dullness/not allowing light to pass through",
+	'disallow'			:   "efuse to allow or accept as a correct",
+	'abide'				:   "be faithful; to endure",
+	'impermeable'		:   "that cannot be permeated",
+	'console'			:   "give comfort or sympathy to",
+	'warrant'			:   "authority written order guarantee",
+	'acclaimed'			:   "welcomed with shouts and approval",
+	'extinct'			:   "no longer active",
+	'reminiscent'		:   "suggest something in the past",
+	'catalyst'			:   "substance that causes speeding up",
+	'embezzle'			:   "use in a wrong way for one's own benefit",
+	'shallow'			:   "little depth; not earnest",
+	'clientele'			:   "customers",
+	'brittle'			:   "easily broken",
+	'negligent'			:   "taking too little care",
+	'affable'			:   "polite and friendly",
+	'salvage'			:   "the saving of property from loss",
+	'moribund'			:   "in a dying state; near death",
+	'relapse'			:   "fall back again",
+	'dangle'			:   "hand or swing loosely",
+	'ascend'			:   "go or come up",
+	'asterisk'			:   "the mark * (e.g.. omitted letters)"
 	// yarn	tale story fibers for knitting
 	// arrogance	proud; superior manner of behaviour
 	// divergence	getting farther apart from a point
@@ -282,6 +282,46 @@ var myGREwordDictionary = {
 
 var myGREwordsSeenMOCK = {
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
+
+
+	'malevolent'		:   "malicious; evil; having or showing ill will",			// 10/8
+	'renovate'			:   "restore something to better condition",
+	'abide'				:   "be faithful; to endure",
+	'philanthropist'	:	"one who loves mankind",
+	'curriculum'		:   "course of study",
+	'catalyst'			:   "substance that causes speeding up",
+	'legacy'			:   "Bequest or inheritance",
+	'massacre'			:   "cruel killing of a large number of people",
+	'acclaimed'			:   "welcomed with shouts and approval",
+	'affable'			:   "polite and friendly",
+	'entice'			:   "attract, lure",
+	'introvert'			:   "one who turns towards himself",
+	'warrant'			:   "authority written order guarantee",
+	'connote'			:   "Suggest or imply in addition to the precise, literal meaning",
+	'braggart'			:   "boastful",
+	'brittle'			:   "easily broken",										// 9/20
+	'surcharge'			:   "additional load/charge",
+	'accolade'			:   "praise; approval",
+	'audacious'			:   "Bold",
+	'amalgamate'		:   "mix; combine; unite societies",
+	'acumen'			:   "Keen, quick, accurate insight or judgment",
+	'disallow'			:   "efuse to allow or accept as a correct",
+	'equilibrium'		:   "state of being balanced",
+	'indigenous'		:   "native",												// 9/12
+	'scent'				:   "smell (especially pleasant)",
+	'ambiguous'			:   "doubtful; uncertain",
+	'extinguish'		:   "end the existence of/wipe or put out",
+	'premature'			:   "doing or happening something before the right time",
+	'antidote' 			:	"medicine used against a poison or a disease",
+	'sporadic'			:   "happening from time to time",
+	'suffocate'			:   "cause or have difficulty in breathing",
+	'loll'				:   "rest to sit or stand in a lazy way hang (dog's tongue)",
+	'fragile'			:   "easily injured broken or destroyed",
+	'stray'				:   "wander lose one's way",
+	'somersault'		:   "rolling backward or forward (not sideways) movement",
+	'affinity'			:   "close connection; relationship",
+
+
 	'endeavor'			:   "to make an effort, to try very hard",
 	'aggravate'			:   "make worse; irritate",
 	'gerontocracy'		:   "government ruled by old people",						// 8/25
@@ -399,7 +439,7 @@ function classScheduleContent(){
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem Prof OH) 		11:40am-1:00pm @ CHE217B <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241si(O Chem SI)		 	 5:30pm-6:30pm @ _todo_ <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241si(O Chem SI)		 	 5:30pm-6:30pm @ CBC-A110 <br>' +
 							'';
 	else if (today.getDay() == 3) // wednesday
 		returnValue = 		returnValue +
@@ -410,8 +450,10 @@ function classScheduleContent(){
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem SI OH)		11:30am-12:30pm @ LIED2 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem Prof OH) 		11:40am-1:00pm @ CHE217B <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241si(O Chem SI)		 	 5:30pm-6:30pm @ CBC-A110 <br>' +
 							'';
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
@@ -466,18 +508,21 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
 							'<br>' +
 							'<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud _drive] <a href="https://drive.google.com">google drive</a><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [school] <a href="webcampus.unlv.edu/webapps/login/">webcampus</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [email] <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">gmail</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [reminders] <a href="https://chrome.google.com/webstore/detail/boomerang-for-gmail/mdanidgdpmkimeiiojknlnekblgmpdll?hl=en">boomerang</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud_drive] <a href="https://drive.google.com">google</a><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud_drive] <a href="https://www.amazon.com/ap/signin?clientContext=133-2459284-1522832&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&siteState=https%3A%2F%2Fwww.amazon.com%2Fclouddrive%2Fref%3Ds9_acss_bw_cg_UASNAVBE_1a1_w%3F_encoding%3DUTF8%26mgh%3D1%26ref_%3DBN_US_C_U_Z_D_CD_CG_417_SINV%26ref_%3Ds9_acss_bw_cg_UASNAVBE_1a1_w%26sf%3D1&marketPlaceId=ATVPDKIKX0DER&pageId=photos_authportal_us&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fclouddrive%2Fauth&openid.assoc_handle=amzn_photos_us&openid.oa2.response_type=token&openid.mode=checkid_setup&openid.ns.oa2=http%3A%2F%2Fwww.amazon.com%2Fap%2Fext%2Foauth%2F2&openid.oa2.scope=clouddrive%3Aretailweb&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.oa2.client_id=iba%3Aamzn1.application-oa2-client.d45dc8aaf8fa47b0966a0dfbc75de512&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=172800">amazon</a><br>' +
 							classScheduleContent() +
 							'<br>' +
 							'<br>' +
-							'<h3>Steps for the Day:</h3>' +
+							'<h3>Resouce Links:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;		 <a href="webcampus.unlv.edu/webapps/login/">webcampus</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [chem241_organic_chemistry] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.mendeley.com/viewer/?fileId=40ce8952-8777-3ecd-1eff-6ba5e6dac425&documentId=a10d048b-e995-30ba-a5de-cfba42babedc">textbook</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.mendeley.com/viewer/?fileId=01e42d20-3a9d-1213-2343-28e83a983385&documentId=edf23ef7-df7d-34b1-b259-c8268e7f8882">solutions manual</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://www.mendeley.com/viewer/?fileId=07da52dc-3b1a-f3f7-2679-7f71273f33e5&documentId=b561325b-4db0-3f23-bad9-b361f12c0e22">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_eld1YXhLb2FtaDQ">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_aGJ6YmppZzhMTG8">solutions manual</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_enlmbkhveDV3UGs">Organic Chemistry as a Second Language</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol434_mammalogy] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.mendeley.com/viewer/?fileId=4ece4e33-635e-9c3b-644d-81f2d7539f19&documentId=5da22fbc-3ca7-3561-9cdc-e0ae467d8ff1">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y0VOdUdSS2xuajQ">textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://animaldiversity.org/">Animal Diversity Web (info/photos)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://naturalhistory.si.edu/mna/main.cfm?lang=_en">Smithsonian North American Mammals (info/geography)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://tolweb.org/tree/">Tree of Life (info/phylogeny)</a> <br>' +
@@ -487,8 +532,11 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=2FM1r173p56NZYP85x6&preferencesSaved=">Web of Science(literature search)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://vertnet.org/">VertNet (museum collections)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol468_histology] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="http://webpac.library.unlv.edu/search~S1/?searchtype=.&searcharg=b5498661">textbook</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://www.mendeley.com/viewer/?fileId=6eef5595-64bf-9345-5092-c11e1b584d25&documentId=ef84761c-93b4-32a0-8879-20a3a9cf020d">lab book</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_RmFDS1NqTVZiYU0">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y3Zwd0hvcDMtVDQ">lab book</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.meddean.luc.edu/lumen/MedEd/Histo/frames/histo_frames.html">Loyola Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.histology.leeds.ac.uk/index.php">Leeds Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://medcell.med.yale.edu/histology/histology.php">Yale Medicine</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [mendeley] <a href="https://www.mendeley.com/library/g">my mendeley</a><br>' +
@@ -510,6 +558,9 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] after each podcast, write down the takeaway to employ in daily like<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] write on paper (iterate versions) morning ritual, goals for day, nightly ritual<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] weekly review of current week that just happened (daily/weekly planning + robot mode); what went wrong and how to make more efficient<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] high quality work = time spent * intensity of focus<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] do the hardest thing first thing in the morning off list of task for the day<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] pomodoro: 25 min investment into just working on something, no need to finish task<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [crashcourse_notes] SQ3R - (survey,question,read,recite,review)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource:<a href="__todoLINK___">__todo_title_</a> <br>' +
 							'<br>' +
