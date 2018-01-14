@@ -389,7 +389,7 @@ function classScheduleContent(){
 	else if (today.getDay() == 1) // monday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304(Molecular Genetics) 	8:30am-9:45am @ WHI105 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy Prof OH)	10:00am-11:00am @ FMA102 <br>' +
 							'';
 	else if (today.getDay() == 2) // tuesday
@@ -416,14 +416,7 @@ function classScheduleContent(){
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-11:20am @ FMA112 <br>' +
-
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
-							'';
-	else if (today.getDay() == 6) // saturday
-		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; STUDY DAY	            	8:30am-11:20am @ FMA112 <br>' +
 							'';
 
 	return returnValue;
