@@ -1,0 +1,5 @@
+"Affenpinscher"	"https://www.akc.org/dog-breeds/affenpinscher/"
+"Brussels Griffon"	"https://www.akc.org/dog-breeds/brussels-griffon/"
+"Cavalier King Charles Spaniel"	"https://www.akc.org/dog-breeds/cavalier-king-charles-spaniel/"
+"Chihuahua"	"https://www.akc.org/dog-breeds/chihuahua/"
+"Chinese Crested" "https://www.akc.org/dog-breeds/chinese-crested/"
