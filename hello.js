@@ -1,18 +1,17 @@
-fs = require('fs');
 
-var CONST_file_dog_breeds_herding = "dog_breeds_herding.txt";
-var CONST_file_dog_breeds_toy = "dog_breeds_toy.txt";
 
 console.log ('\n---TESTING NEW FUNCTION ---');
-console.log ("   goal: select random line and email out link for daily dog breed to learn\n");
-
-
 console.log ("   _todo_ : select random line start");
 
-//note this will be async (aka blocking)
-function getRandomLine(filename){
 
-	
+/////////////////////////////////////////////////////////////
+//  [daily dog breed related]
+
+fs = require('fs');
+var CONST_file_dog_breeds_toy = "dog_breeds_toy.txt";
+
+//  note this will be async (aka blocking)
+function getRandomLine(filename){
 	var myArray = fs.readFileSync(filename).toString().split("\n");
 	
 	console.log ("    [array size]:" + myArray.length);	
@@ -24,10 +23,18 @@ function getRandomLine(filename){
 	
 	//_todo_ construct the html link for email sender"
 	
-	console.log ("    [line.title]:" + randomLineArray[0]);	
-	console.log ("    [line.link]:" + randomLineArray[1]);	
+	console.log ("    [line.group]:" + randomLineArray[0]);	
+	console.log ("    [line.breed]:" + randomLineArray[1]);	
+	console.log ("    [line.link]:" + randomLineArray[2]);	
 }
 
 getRandomLine(CONST_file_dog_breeds_toy);
 
+
+//  [end daily dog breed related]
+/////////////////////////////////////////////////////////////
+
 console.log ("   _todo_ : select random line end");
+
+
+console.log ('\n---END TESTING NEW FUNCTION ---\n');

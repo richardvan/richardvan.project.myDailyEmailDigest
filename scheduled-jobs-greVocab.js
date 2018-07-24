@@ -516,12 +516,17 @@ function sendEmail(){
 							'<b>GRE Word of the DAY</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
 							'<br>' +
-							'<b>Quote/Image of the DAY</b><br>' +
+							'<b>Quote of the DAY</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;' + GLOBAL_quoteOfTheDay + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;         -<i>' + GLOBAL_quoteOfTheDayAuthor + '</i><br>' +
 							'<br>' +
+							'<b>Image of the DAY</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;' + GLOBAL_imageOfTheDay + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;         -<i>' + GLOBAL_imageOfTheDayAuthor + '</i><br>' +
+							'<br>' +
+							'<b>Dog Breed of the DAY</b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;' + GLOBAL_dogBreedOfTheDay[2].toString() + '<br>' +						// [0] group; [1] breed; [2] url
+							'&ensp;&ensp;&ensp;&ensp;         -<i>' + GLOBAL_dogBreedOfTheDay[1].toString() + '( of ' + GLOBAL_dogBreedOfTheDay[0].toString() + ' group)' + '</i><br>' +
 							'<br>' +
 							'<h3>My Custom Tools:</h3>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [Root Finder 1.0] <a href="https://richardvan-learn-biology-roots.herokuapp.com/">live</a><br>' +
@@ -625,15 +630,21 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#1.) open sublime and terminal' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#2.) homebrew install git' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#3.) homebrew install node' + '<br>' +
-							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#4.) git clone https://git.heroku.com/shrouded-brook-44002.git' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#4.) git clone https://github.com/richardvan/richardvan.project.myDailyEmailDigest.git' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;		 <DO NOT USE> git clone https://github.com/richardvan/richardvan.project.myDailyEmailDigest.git' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;		 <DO NOT USE> have automatic deploy enabled on heroku-github integration;' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;		 <DO NOT USE> hook is called once a commit to github branch happens; then is commited to heroku; then deployed' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#5.) cd <repo cloned>' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#5.) npm update' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#5.) npm install <[ex]rss-parser>' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#6.) brew install heroku/brew/heroku' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#6.) heroku login' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#7.) <make updates in sublime>' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#8.) git add .' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#8.) git commit -m <message_in_quotes>' + '<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#8.) git push' + '<br>' +
+							'<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#T.) node <[ex]scheduled-jobs-greVocab.js>' + '<br>' +
 							'<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#L.) [heroku service] https://dashboard.heroku.com/apps/shrouded-brook-44002' +
 							
@@ -711,7 +722,49 @@ var parser = new Parser();
  	};
 
 console.log ("  XX> [end getting RSS feed call] (non-callback)");
-				
+
+
+console.log ("  XX> [daily dog breed related");
+////////////////////////////////////////////////////////////
+//  [daily dog breed related]
+
+fs = require('fs');
+var CONST_file_dog_breeds_toy = "dog_breeds_toy.txt";
+
+//  note this will be async (aka blocking)
+function getRandomLine(filename){
+	var myArray = fs.readFileSync(filename).toString().split("\n");
+	
+	console.log ("    [array size]:" + myArray.length);	
+	//for(i in myArray) {
+	//	console.log(myArray[i]);
+	//}
+	var randomLine = myArray[Math.floor(Math.random() * myArray.length)];
+	var randomLineArray = randomLine.toString().split("\t");
+	
+	// regexp to remove the quotes if they are the first and last characters of the string
+	// done this way so that saving the data was easier
+	randomLineArray[0] = randomLineArray[0].replace(/^"(.*)"$/, '$1');
+	randomLineArray[1] = randomLineArray[1].replace(/^"(.*)"$/, '$1');
+	randomLineArray[2] = randomLineArray[2].replace(/^"(.*)"$/, '$1');
+	
+	console.log ("    [line.group]:" + randomLineArray[0]);	
+	console.log ("    [line.breed]:" + randomLineArray[1]);	
+	console.log ("    [line.link]:" + randomLineArray[2]);	
+
+	return randomLineArray;
+}
+
+
+GLOBAL_dogBreedOfTheDay= getRandomLine(CONST_file_dog_breeds_toy);;
+
+
+
+
+//  [end daily dog breed related]
+/////////////////////////////////////////////////////////////
+console.log ("  XX> [end daily dog breed related");
+
 
 // })
 
