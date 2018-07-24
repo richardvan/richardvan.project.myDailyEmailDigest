@@ -1,7 +1,7 @@
 // initially from http://www.modeo.co/blog/2015/1/8/heroku-scheduler-with-nodejs-tutorial
 
 function sayHello() {
-    console.log('[DEBUG] hello as of 7/24/18');
+    console.log('[DEBUG] hello as of 7/24/18 - auto deploy test');
 }
 
 var GLOBAL_quoteOfTheDay = "";
