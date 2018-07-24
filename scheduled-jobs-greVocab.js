@@ -7,181 +7,101 @@ function sayHello() {
     console.log('Hello 4');
 }
 
+var GLOBAL_quoteOfTheDay = "";
+var GLOBAL_quoteOfTheDayAuthor = "";
+var GLOBAL_imageOfTheDay = "";
+var GLOBAL_imageOfTheDayAuthor = "";
+
 var myPastGREwords = {};
 var myGREwordDictionary = {
 	// list from https://www.graduateshotline.com/gre-word-list.html
-	'introspection' 	:	"examining one's own thoughts and feelings",
-	'philanthropist'	:	"one who loves mankind",
-	'antidote' 			:	"medicine used against a poison or a disease",
-	'strive'			:   "to make great efforts, to struggle",
-	'ambidextrous'		:   "able to use the left hand or the right equally well",
-	'retrospective'		:   "Looking back on past",
-	'precursors'		:   "a person or thing that precedes, as in a process or job",
-	'introvert'			:   "one who turns towards himself",
-	'gerontocracy'		:   "government ruled by old people",
-	'ambiguous'			:   "doubtful; uncertain",
-	'braggart'			:   "boastful",
-	'aggravate'			:   "make worse; irritate",
-	'entice'			:   "attract, lure",
-	'alleviate'			:   "make (pain) easier to bear",
-	'adorn'				:   "add beauty; decorate",
-	'equilibrium'		:   "state of being balanced",
-	'abhor'				:   "to hate; to detest",
-	'connote'			:   "Suggest or imply in addition to the precise, literal meaning",
-	'endeavor'			:   "to make an effort, to try very hard",
-	'agile'				:   "active; quick-moving",
-	'renovate'			:   "restore something to better condition",
-	'curriculum'		:   "course of study",
-	'malevolent'		:   "malicious; evil; having or showing ill will",
-	'amalgamate'		:   "mix; combine; unite societies",
-	'xenophile'			:   "a person who is attracted to foreign peoples cultures",
-	'drowsiness'		:   "feeling sleepy half asleep",
-	'stray'				:   "wander lose one's way",
-	'disrobe'			:   "undress",
-	'acumen'			:   "Keen, quick, accurate insight or judgment",
-	'suffocate'			:   "cause or have difficulty in breathing",
-	'sporadic'			:   "happening from time to time",
-	'scent'				:   "smell (especially pleasant)",
-	'sequence'			:   "succession connected line of",
-	'audacious'			:   "Bold",
-	'affinity'			:   "close connection; relationship",
-	'animosity'			:   "strong dislike",
-	'heterogeneous'		:   "made up of different kinds",
-	'fragile'			:   "easily injured broken or destroyed",
-	'legacy'			:   "Bequest or inheritance",
-	'massacre'			:   "cruel killing of a large number of people",
-	'appease'			:   "make quiet or calm",
-	'submerge'			:   "put under water liquid sink out of sight",
-	'adulteration'		:   "making unpure; poorer in quality",
-	'combustion'		:   "process of burning",
-	'premature'			:   "doing or happening something before the right time",
-	'shunned'			:   "avoided, kept away from",
-	'anguish'			:   "severe suffering",
-	'apt'				:   "well-suited; quick-witted",
-	'conceal'			:   "hide keep secret",
-	'grumble'			:   "to complain",
-	'indigenous'		:   "native",
-	'offhand'			:   "Without preparation or forethought",
-	'loll'				:   "rest to sit or stand in a lazy way hang (dog's tongue)",
-	'correlate'			:   "have a mutual relation",
-	'somersault'		:   "rolling backward or forward (not sideways) movement",
-	'abscond'			:   "to go away suddenly (to avoid arrest)",
-	'edible'			:   "fit to be eaten/not poisonous",
-	'extinguish'		:   "end the existence of/wipe or put out",
-	'inquest'			:   "Legal or judicial inquiry, especially before a jury and especially made by a coroner into the cause of someone.s death",
-	'surcharge'			:   "additional load/charge",
-	'accolade'			:   "praise; approval",
-	'conjoin'			:   "to join together",
-	'timid'				:   "shy easily frightened",
-
-
 	
-	'opaqueness'		:   "dullness/not allowing light to pass through",
-	'disallow'			:   "efuse to allow or accept as a correct",
-	'abide'				:   "be faithful; to endure",
-	'impermeable'		:   "that cannot be permeated",
-	'console'			:   "give comfort or sympathy to",
-	'warrant'			:   "authority written order guarantee",
-	'acclaimed'			:   "welcomed with shouts and approval",
-	'extinct'			:   "no longer active",
-	'reminiscent'		:   "suggest something in the past",
-	'catalyst'			:   "substance that causes speeding up",
-	'embezzle'			:   "use in a wrong way for one's own benefit",
-	'shallow'			:   "little depth; not earnest",
-	'clientele'			:   "customers",
-	'brittle'			:   "easily broken",
-	'negligent'			:   "taking too little care",
-	'affable'			:   "polite and friendly",
-	'salvage'			:   "the saving of property from loss",
-	'moribund'			:   "in a dying state; near death",
-	'relapse'			:   "fall back again",
-	'dangle'			:   "hand or swing loosely",
-	'ascend'			:   "go or come up",
-	'asterisk'			:   "the mark * (e.g.. omitted letters)"
-	// yarn	tale story fibers for knitting
-	// arrogance	proud; superior manner of behaviour
-	// divergence	getting farther apart from a point
-	// allegiance	duty support loyalty
-	// vigorous	strong energetic
-	// dwarf	person much smaller the usual size
-	// livid	Furiously angry, enraged
-	// rejuvenation	becoming young in nature or appearance
-	// fragrant	sweet-smelling
-	// judicious	sound in judgment; wise
-	// hospitable	liking to give hospitality
-	// odor	smell
-	// scribble	write hastily
-	// ameliorate	improve; make better
-	// poseur	a person who attempts to impress by acting unlike himself
-	// sawdust	tiny bits of wood
-	// narcissism	Self-love
-	// dullard	a stupid, insensitive person
-	// succumb	yield, die
-	// sluggard	lazy slow-moving person
-	// flop	fail/move/fall clumsily
-	// ingest	take in by swallowing
-	// reiterate	say or do again several times
-	// derivative	unoriginal; obtained from another source
-	// defer	postpone
-	// eloquence	fluent speaking skillful use of language
-	// clot	half-solid lump formed from liquid
-	// commuter	person who travels regularly
-	// weigh	measure hoe heavy something is
-	// steeply	rising or falling sharply
-	// torque	twisting force causing rotation
-	// benefactor	person who has given help
-	// moderation	quality of being limited; not extreme
-	// plea	request
-	// invincible	too strong to be defeated
-	// enduring	lasting
-	// flimsy	lacking solidarity, strength
-	// tadpole	form of a frog when it leaves the egg
-	// turmoil	trouble disturbance
-	// sanity	health of mind soundness of judgment
-	// cryptic	secret with a hidden meaning
-	// gallant	brave,behaves well with women
-	// endorse	write one's name on the back of
-	// sponge	porous rubber for washing live at once expense
-	// volatile	changeable inconstant fickle unstable explosive
-	// alloy	to debase by mixing with something inferior
-	// reconcile	settle a quarrel restore peace
-	// fission	splitting or division (esp. of cells)
-	// commemorate	keep the memory of
-	// gait	a manner of walking, stepping, or running
-	// dormant	in a state of inactivity but awaiting development
-	// shard	A piece of broken pottery
-	// chisel	steel tool for shaping materials
-	// encapsulate	enclose in capsule
-	// complaisant	trying to please; obliging
-	// grievous	causing grief or pain; serious dire grave
-	// hypocrisy	falsely making oneself appear to be good
-	// enzyme	catalyst
-	// eradicate	get rid of pull up by the roots
-	// infuriate	fill with fury or rage
-	// Lambaste	attack verbally
-	// sanction	approval (by authority) penalty
-	// engulf	swallow up
-	// euphoria	elation state of pleasant excitement
-	// renowned	celebrated; famous
-	// colloquial	involving or using conversation.
-	// evoke	call up bring out
-	// mischievous	harmful; causing mischief
-	// implicit	implied though; not plainly expressed
-	// abysmal	extreme bad
-	// dote	show much fondness center one's attention
-	// riddle	puzzling person or thing
-	// misogynist	one who hates women/females
-	// disproof	proof to the contrary
-	// sadastic	Cruel
-	// impromptu	without preparation
-	// inclined	directing the mind in a certain direction
-	// erratic	irregular in behaviour or opinion
-	// meticulous	giving great attention to details
-	// ambivalent	having both of two contrary meanings
-	// pertain	belong as a part have reference
-	// auxiliary	helping; supporting
-	// constrict	make tight or smaller
-	// luminary	star; light-giving body
+
+	'introspection' 	:	"examining one's own thoughts and feelings",
+	'yarn' 	:	"tale story fibers for knitting",
+	'arrogance' 	:	"proud; superior manner of behaviour",
+	'divergence' 	:	"getting farther apart from a point",
+	'allegiance' 	:	"duty support loyalty",
+	'vigorous' 	:	"strong energetic",
+	'dwarf' 	:	"person much smaller the usual size",
+	'livid' 	:	"Furiously angry, enraged",
+	'rejuvenation' 	:	"becoming young in nature or appearance",
+	'fragrant' 	:	"sweet-smelling",
+	'judicious' 	:	"sound in judgment; wise",
+	'hospitable' 	:	"liking to give hospitality",
+	'odor' 	:	"smell",
+	'scribble' 	:	"write hastily",
+	'ameliorate' 	:	"improve; make better",
+	'poseur' 	:	"a person who attempts to impress by acting unlike himself",
+	'sawdust' 	:	"tiny bits of wood",
+	'narcissism' 	:	"Self-love",
+	'dullard' 	:	"a stupid, insensitive person",
+	'succumb' 	:	"yield, die",
+	'sluggard' 	:	"lazy slow-moving person",
+	'flop' 	:	"fail/move/fall clumsily",
+	'ingest' 	:	"take in by swallowing",
+	'reiterate' 	:	"say or do again several times",
+	'derivative' 	:	"unoriginal; obtained from another source",
+	'defer' 	:	"postpone",
+	'eloquence' 	:	"fluent speaking skillful use of language",
+	'clot' 	:	"half-solid lump formed from liquid",
+	'commuter' 	:	"person who travels regularly",
+	'weigh' 	:	"measure hoe heavy something is",
+	'steeply' 	:	"rising or falling sharply",
+	'torque' 	:	"twisting force causing rotation",
+	'benefactor' 	:	"person who has given help",
+	'moderation' 	:	"quality of being limited; not extreme",
+	'plea' 	:	"request",
+	'invincible' 	:	"too strong to be defeated",
+	'enduring' 	:	"lasting",
+	'flimsy' 	:	"lacking solidarity, strength",
+	'tadpole' 	:	"form of a frog when it leaves the egg",
+	'turmoil' 	:	"trouble disturbance",
+	'sanity' 	:	"health of mind soundness of judgment",
+	'cryptic' 	:	"secret with a hidden meaning",
+	'gallant' 	:	"brave,behaves well with women",
+	'endorse' 	:	"write one's name on the back of",
+	'sponge' 	:	"porous rubber for washing live at once expense",
+	'volatile' 	:	"changeable inconstant fickle unstable explosive",
+	'alloy' 	:	"to debase by mixing with something inferior",
+	'reconcile' 	:	"settle a quarrel restore peace",
+	'fission' 	:	"splitting or division (esp. of cells)",
+	'commemorate' 	:	"keep the memory of",
+	'gait' 	:	"a manner of walking, stepping, or running",
+	'dormant' 	:	"in a state of inactivity but awaiting development",
+	'shard' 	:	"A piece of broken pottery",
+	'chisel' 	:	"steel tool for shaping materials",
+	'encapsulate' 	:	"enclose in capsule",
+	'complaisant' 	:	"trying to please; obliging",
+	'grievous' 	:	"causing grief or pain; serious dire grave",
+	'hypocrisy' 	:	"falsely making oneself appear to be good",
+	'enzyme' 	:	"catalyst",
+	'eradicate' 	:	"get rid of pull up by the roots",
+	'infuriate' 	:	"fill with fury or rage",
+	'Lambaste' 	:	"attack verbally",
+	'sanction' 	:	"approval (by authority) penalty",
+	'engulf' 	:	"swallow up",
+	'euphoria' 	:	"elation state of pleasant excitement",
+	'renowned' 	:	"celebrated; famous",
+	'colloquial' 	:	"involving or using conversation.",
+	'evoke' 	:	"call up bring out",
+	'mischievous' 	:	"harmful; causing mischief",
+	'implicit' 	:	"implied though; not plainly expressed",
+	'abysmal' 	:	"extreme bad",
+	'dote' 	:	"show much fondness center one's attention",
+	'riddle' 	:	"puzzling person or thing",
+	'misogynist' 	:	"one who hates women/females",
+	'disproof' 	:	"proof to the contrary",
+	'sadastic' 	:	"Cruel",
+	'impromptu' 	:	"without preparation",
+	'inclined' 	:	"directing the mind in a certain direction",
+	'erratic' 	:	"irregular in behaviour or opinion",
+	'meticulous' 	:	"giving great attention to details",
+	'ambivalent' 	:	"having both of two contrary meanings",
+	'pertain' 	:	"belong as a part have reference",
+	'auxiliary' 	:	"helping; supporting",
+	'constrict' 	:	"make tight or smaller",
+	'luminary' 	:	"star; light-giving body"
 	// ossified	turned to bone; hardened like bone; Inflexible
 	// tonic	something giving strength or energy
 	// perish	be destroyed decay
@@ -281,6 +201,99 @@ var myGREwordDictionary = {
 }
 
 var myGREwordsSeenMOCK = {
+
+
+	// updating list on 5/30/2018 <everything below had been sent over random occurances over many months>
+	'introspection' 	:	"examining one's own thoughts and feelings",
+	'philanthropist'	:	"one who loves mankind",
+	'antidote' 			:	"medicine used against a poison or a disease",
+	'strive'			:   "to make great efforts, to struggle",
+	'ambidextrous'		:   "able to use the left hand or the right equally well",
+	'retrospective'		:   "Looking back on past",
+	'precursors'		:   "a person or thing that precedes, as in a process or job",
+	'introvert'			:   "one who turns towards himself",
+	'gerontocracy'		:   "government ruled by old people",
+	'ambiguous'			:   "doubtful; uncertain",
+	'braggart'			:   "boastful",
+	'aggravate'			:   "make worse; irritate",
+	'entice'			:   "attract, lure",
+	'alleviate'			:   "make (pain) easier to bear",
+	'adorn'				:   "add beauty; decorate",
+	'equilibrium'		:   "state of being balanced",
+	'abhor'				:   "to hate; to detest",
+	'connote'			:   "Suggest or imply in addition to the precise, literal meaning",
+	'endeavor'			:   "to make an effort, to try very hard",
+	'agile'				:   "active; quick-moving",
+	'renovate'			:   "restore something to better condition",
+	'curriculum'		:   "course of study",
+	'malevolent'		:   "malicious; evil; having or showing ill will",
+	'amalgamate'		:   "mix; combine; unite societies",
+	'xenophile'			:   "a person who is attracted to foreign peoples cultures",
+	'drowsiness'		:   "feeling sleepy half asleep",
+	'stray'				:   "wander lose one's way",
+	'disrobe'			:   "undress",
+	'acumen'			:   "Keen, quick, accurate insight or judgment",
+	'suffocate'			:   "cause or have difficulty in breathing",
+	'sporadic'			:   "happening from time to time",
+	'scent'				:   "smell (especially pleasant)",
+	'sequence'			:   "succession connected line of",
+	'audacious'			:   "Bold",
+	'affinity'			:   "close connection; relationship",
+	'animosity'			:   "strong dislike",
+	'heterogeneous'		:   "made up of different kinds",
+	'fragile'			:   "easily injured broken or destroyed",
+	'legacy'			:   "Bequest or inheritance",
+	'massacre'			:   "cruel killing of a large number of people",
+	'appease'			:   "make quiet or calm",
+	'submerge'			:   "put under water liquid sink out of sight",
+	'adulteration'		:   "making unpure; poorer in quality",
+	'combustion'		:   "process of burning",
+	'premature'			:   "doing or happening something before the right time",
+	'shunned'			:   "avoided, kept away from",
+	'anguish'			:   "severe suffering",
+	'apt'				:   "well-suited; quick-witted",
+	'conceal'			:   "hide keep secret",
+	'grumble'			:   "to complain",
+	'indigenous'		:   "native",
+	'offhand'			:   "Without preparation or forethought",
+	'loll'				:   "rest to sit or stand in a lazy way hang (dog's tongue)",
+	'correlate'			:   "have a mutual relation",
+	'somersault'		:   "rolling backward or forward (not sideways) movement",
+	'abscond'			:   "to go away suddenly (to avoid arrest)",
+	'edible'			:   "fit to be eaten/not poisonous",
+	'extinguish'		:   "end the existence of/wipe or put out",
+	'inquest'			:   "Legal or judicial inquiry, especially before a jury and especially made by a coroner into the cause of someone.s death",
+	'surcharge'			:   "additional load/charge",
+	'accolade'			:   "praise; approval",
+	'conjoin'			:   "to join together",
+	'timid'				:   "shy easily frightened",
+
+
+	
+	'opaqueness'		:   "dullness/not allowing light to pass through",
+	'disallow'			:   "efuse to allow or accept as a correct",
+	'abide'				:   "be faithful; to endure",
+	'impermeable'		:   "that cannot be permeated",
+	'console'			:   "give comfort or sympathy to",
+	'warrant'			:   "authority written order guarantee",
+	'acclaimed'			:   "welcomed with shouts and approval",
+	'extinct'			:   "no longer active",
+	'reminiscent'		:   "suggest something in the past",
+	'catalyst'			:   "substance that causes speeding up",
+	'embezzle'			:   "use in a wrong way for one's own benefit",
+	'shallow'			:   "little depth; not earnest",
+	'clientele'			:   "customers",
+	'brittle'			:   "easily broken",
+	'negligent'			:   "taking too little care",
+	'affable'			:   "polite and friendly",
+	'salvage'			:   "the saving of property from loss",
+	'moribund'			:   "in a dying state; near death",
+	'relapse'			:   "fall back again",
+	'dangle'			:   "hand or swing loosely",
+	'ascend'			:   "go or come up",
+	'asterisk'			:   "the mark * (e.g.. omitted letters)",
+
+
 	// all words that have been send over the wire naturally at 7:30am as of 8/22/2017
 
 
@@ -381,13 +394,13 @@ function getPastGREwordsContent(dict){
 	
 	var returnValue = "";
 
-	console.log ("  ------>    dict: %s", JSON.stringify(dict));
-	console.log ("  ------>    dict size: %i", Object.keys(dict).length);
+	//console.log ("  ------>    dict: %s", JSON.stringify(dict));
+	//console.log ("  ------>    dict size: %i", Object.keys(dict).length);
 
 
 	for (var key in dict) {
 	    if (dict.hasOwnProperty(key)) {
-			console.log("  ------>    %s,%s", key, dict[key]);
+			//console.log("  ------>    %s,%s", key, dict[key]);
 
 			returnValue = returnValue + '<b>' + key +'</b>: ' + dict[key] + '<br>';
 	    }
@@ -404,61 +417,58 @@ function getPastGREwordsContent(dict){
 
 function classScheduleContent(){
 
-	var returnValue = 		'<h3>Class Schedule Fall 2017</h3>';
+	var returnValue = 		'<h3>Class Schedule Spring 2018</h3>';
 
 	var today = new Date();
 	if(today.getDay() == 0) 	// sunday - return everything to get an overview
 		returnValue = 		returnValue +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434L(Mammalogy Lab) 		8:30am-9:45am @ FMA110 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology Lab) 		12:00pm-2:50pm @ WHI207 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Sunday</b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304(Molecular Genetics) 	1:00pm-2:15pm @ TBE B-174<br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM242(Organic Chemistry) 	4:00pm-5:15pm @ RBP102 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL490(Biogeography) 	    8:30am-9:45m @ WHI105 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology UTA) 	    1:00pm-3:50pm @ WHI202 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL480(Biological Modeling) 4:00pm-5:15pm @ TBE B-176 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304D(Genetics D)         8:30am-11:15am @ BHS208 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304(Molecular Genetics) 	1:00pm-2:15pm @ TBE B-174 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM242(Organic Chemistry) 	4:00pm-5:15pm @ RBP102 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL490(Biogeography) 	    8:30am-9:45am @ WHI105 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology UTA) 	    1:00pm-3:50pm @ WHI202 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL480(Biological Modeling) 4:00pm-5:15pm @ TBE B-176 <br>' +
 							'';
 	else if (today.getDay() == 1) // monday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304(Molecular Genetics) 	8:30am-9:45am @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy Prof OH)	10:00am-11:00am @ FMA102 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
 							'';
 	else if (today.getDay() == 2) // tuesday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem Prof OH) 		11:40am-1:00pm @ CHE217B <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241L(O Chem Lab)		 	 2:30pm-5:20pm @ CHE219 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241si(O Chem SI)		 	 5:30pm-6:30pm @ CBC-A110 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
 							'';
 	else if (today.getDay() == 3) // wednesday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL434(Mammalogy) 			8:30am-9:45am @ WHI105 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
 							'';
 	else if (today.getDay() == 4) // thursday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(Organic Chemistry) 	10:00am-11:15am @ SECB1311 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem SI OH)		11:30am-12:30pm @ LIED2 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241(O Chem Prof OH) 		11:40am-1:00pm @ CHE217B <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology) 			 1:00pm-1:50pm @ WHI105 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM241si(O Chem SI)		 	 5:30pm-6:30pm @ CBC-A110 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
 							'';
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; STUDY DAY	            	8:30am-11:20am @ FMA112 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							'';
+	else if (today.getDay() == 6) // saturday
+		returnValue = 		returnValue +
+							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday</b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
 							'';
 
 	return returnValue;
@@ -495,6 +505,8 @@ function sendEmail(){
 	var currentGREword = getNextGREword();
 
 
+
+
 	console.log ("  ------> [crafting sendgrid object]");
 	var helper = require('sendgrid').mail;
 	var from_email = new helper.Email('greVocabMockup@hongboDailyEmailDigest._todoUpdateThisCounter');
@@ -507,20 +519,63 @@ function sendEmail(){
 							'<b>GRE Word of the DAY</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;<b>' + currentGREword +'</b>: ' + myGREwordDictionary[currentGREword] + '<br>' +
 							'<br>' +
+							'<b>Quote/Image of the DAY</b><br>' +
+							'&ensp;&ensp;&ensp;&ensp;' + GLOBAL_quoteOfTheDay + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;         -<i>' + GLOBAL_quoteOfTheDayAuthor + '</i><br>' +
 							'<br>' +
+							'&ensp;&ensp;&ensp;&ensp;' + GLOBAL_imageOfTheDay + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;         -<i>' + GLOBAL_imageOfTheDayAuthor + '</i><br>' +
+							'<br>' +
+							'<h3>My Custom Tools:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [Root Finder 1.0] <a href="https://richardvan-learn-biology-roots.herokuapp.com/">live</a><br>' +
+							'<h3>My Common Links:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [webcampus] <a href="webcampus.unlv.edu/webapps/login/">webcampus</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [email] <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">gmail</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [reminders] <a href="https://chrome.google.com/webstore/detail/boomerang-for-gmail/mdanidgdpmkimeiiojknlnekblgmpdll?hl=en">boomerang</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud_drive] <a href="https://drive.google.com">google</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [cloud_drive] <a href="https://www.amazon.com/ap/signin?clientContext=133-2459284-1522832&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&siteState=https%3A%2F%2Fwww.amazon.com%2Fclouddrive%2Fref%3Ds9_acss_bw_cg_UASNAVBE_1a1_w%3F_encoding%3DUTF8%26mgh%3D1%26ref_%3DBN_US_C_U_Z_D_CD_CG_417_SINV%26ref_%3Ds9_acss_bw_cg_UASNAVBE_1a1_w%26sf%3D1&marketPlaceId=ATVPDKIKX0DER&pageId=photos_authportal_us&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fclouddrive%2Fauth&openid.assoc_handle=amzn_photos_us&openid.oa2.response_type=token&openid.mode=checkid_setup&openid.ns.oa2=http%3A%2F%2Fwww.amazon.com%2Fap%2Fext%2Foauth%2F2&openid.oa2.scope=clouddrive%3Aretailweb&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.oa2.client_id=iba%3Aamzn1.application-oa2-client.d45dc8aaf8fa47b0966a0dfbc75de512&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=172800">amazon</a><br>' +
 							classScheduleContent() +
 							'<br>' +
+
+							'<h3>Resources Links (Fall 2018):</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [_TODO_class_scheduleFirst] <br>' + 
 							'<br>' +
-							'<h3>Resouce Links:</h3>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;		 <a href="webcampus.unlv.edu/webapps/login/">webcampus</a> <br>' +
+							'<h3>Random Learning Links:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [Educational/Science] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://avida-ed.msu.edu/avida-ed-application/">Avida</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="http://www.pnas.org/">National Academy of Sciences</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.nature.com/">Nature Journal</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://singularityhub.com/">Singlularity Hub</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="http://www.sciencemag.org/">Science Journal</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [Companies] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.unitedneuroscience.com/news/">United Neuroscience</a> <br>' +
+							'<br>' +
+							'<h3>Resources Links (Spring 2018):</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [chem242_organic_chemistry] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_eld1YXhLb2FtaDQ">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_aGJ6YmppZzhMTG8">solutions manual</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_WEV0TXRYQU9SMFE">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol304_genetics] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=1X4TlQzr0ZDZhKYzdb5VrQKK1PlothBhS">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://perrylocal.org/herstinm/about-me/class-notes-2/">AP BIOL class-notes-2</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol480_biologicalModeling] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://faculty.unlv.edu/schulte/BIO480/">class website (login:class|pw:notes)</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=1eaMxfFkOzY5CxqB14mraH9Qhlql66iwW">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol490_biogeography] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="_blank">textbook_physical</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&#9634;     [UTA_biol468_histology] <br>' + 
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_RmFDS1NqTVZiYU0">textbook</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y3Zwd0hvcDMtVDQ">lab book</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://medcell.med.yale.edu/histology/histology.php">Yale Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://histology.medicine.umich.edu/full-slide-list">Michigan Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.siumed.edu/~dking2/index.htm">SIU Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.meddean.luc.edu/lumen/MedEd/Histo/frames/histo_frames.html">Loyola Medicine</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.histology.leeds.ac.uk/index.php">Leeds Medicine</a> <br>' +
+							'<h3>Resources Links (Fall 2017):</h3>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [chem241_organic_chemistry] <br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_eld1YXhLb2FtaDQ">textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_aGJ6YmppZzhMTG8">solutions manual</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_enlmbkhveDV3UGs">Organic Chemistry as a Second Language</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_enlmbkhveDV3UGs">Organic Chemistry as a Second Language (Second Semester)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol434_mammalogy] <br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y0VOdUdSS2xuajQ">textbook</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://animaldiversity.org/">Animal Diversity Web (info/photos)</a> <br>' +
@@ -531,12 +586,6 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="https://academic.oup.com/mspecies">Mammalian Species (publications)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=2FM1r173p56NZYP85x6&preferencesSaved=">Web of Science(literature search)</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://vertnet.org/">VertNet (museum collections)</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&#9634;     [biol468_histology] <br>' + 
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_RmFDS1NqTVZiYU0">textbook</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lab:<a href="https://drive.google.com/open?id=0ByHKgw81Z5-_Y3Zwd0hvcDMtVDQ">lab book</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.meddean.luc.edu/lumen/MedEd/Histo/frames/histo_frames.html">Loyola Medicine</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://www.histology.leeds.ac.uk/index.php">Leeds Medicine</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource: <a href="http://medcell.med.yale.edu/histology/histology.php">Yale Medicine</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [coding] problem-a-day:<a href="http://rosalind.info/problems/list-view/">rosalind</a><br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [review] flashcards spaced repetition:<a href="https://ankiweb.net/decks/">anki</a><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [mendeley] <a href="https://www.mendeley.com/library/g">my mendeley</a><br>' +
@@ -551,8 +600,8 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     breath horizontally - (todo_add more pictures, details, sheet)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     check out https://code.visualstudio.com/ to use instead of sublime<br>' +
 							'<br>' +
-							'<br>' +
 							'<h3>Random Tips to organize:</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	"put first things first" (<a href="https://www.artofmanliness.com/articles/the-7-habits-put-first-things-first/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+TheArtOfManliness+%28The+Art+of+Manliness%29&mc_cid=ef0fb11a16&mc_eid=52eed0baac">AoM</a>)<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	always think "iterate"<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	steps -> short-term goals -> long-term goals -> dreams"<br>' +
 							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp; [tip] after each podcast, write down the takeaway to employ in daily like<br>' +
@@ -565,14 +614,41 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; resource:<a href="__todoLINK___">__todo_title_</a> <br>' +
 							'<br>' +
 							'<br>' +
+							'<h3>Quotes</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	[quote] Adapt what is useful, reject what is useless, and add what is specifically your own.  -Bruce Lee <br>' +
+							'<br>' +
+							'<br>' +
+
+
 							'<h3>List of past words sent thus far!</h3>' + 
 							pastGREwordsContent + 
+							'<br>' +
+							'<br>' +
+							'<h3>[ -- To Update This Email --]</h3>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#1.) open sublime and terminal' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#2.) homebrew install git' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#3.) homebrew install node' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#4.) git clone https://git.heroku.com/shrouded-brook-44002.git' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#5.) cd <repo cloned>' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#5.) npm update' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#6.) brew install heroku/brew/heroku' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#6.) heroku login' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#7.) <make updates in sublime>' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#8.) git add .' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#8.) git commit -m <message_in_quotes>' + '<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#8.) git push' + '<br>' +
+							'<br>' +
+							'&ensp;&ensp;&ensp;&ensp;&gt;&ensp;	#L.) [heroku service] https://dashboard.heroku.com/apps/shrouded-brook-44002' +
+							
+							'<br>' +
 							'<br>' +
 							'[ end of message hongbo ]' +
 
 
 
 							'';
+
+							
 
 
 
@@ -597,23 +673,48 @@ function sendEmail(){
 
 
 	console.log ("  ---> end sendEmail() function");
+
 }
 
 
 
 
+console.log ("\n");
+console.log ("  XX> [getting RSS feeds](non-callback)");
+var Parser = require('rss-parser');
+var parser = new Parser();
+// (async () => {
+
+	parser.parseURL('https://www.brainyquote.com/link/quotebr.rss', function(err, feed){
+
+		console.log ("  XXXXXX> [getting RSS feeds - 1st - quoteOfDay]");
+		GLOBAL_quoteOfTheDayAuthor = feed.items[0].title;
+		GLOBAL_quoteOfTheDay = feed.items[0].content;
+		console.log ("  XXXXXX> quote:%s\n", GLOBAL_quoteOfTheDay);
+		console.log ("  XXXXXX> [end getting RSS feed callback - quoteOfDay]\n\n");
 
 
+		nextRSSCall_01();		// is this "callback hell?"
+	} );
+
+	function nextRSSCall_01 (err, response, body) {
+		parser.parseURL('https://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss', function(err, feed){
+
+			console.log ("  XXXXXX> [getting RSS feeds - 1st - nasaImage]");
+			GLOBAL_imageOfTheDayAuthor = feed.items[0].title;
+			GLOBAL_imageOfTheDay = feed.items[0].enclosure.url;
+			console.log ("  X2XXXXX> imageAuthor:%s\n", GLOBAL_imageOfTheDayAuthor);
+			console.log ("  X2XXXXX> image_nasa:%s\n", GLOBAL_imageOfTheDay);
+			console.log ("  XXXXXX> [end getting RSS feed callback - nasaImage]\n\n");
 
 
+			sendEmail();
 
+		});
+ 	};
 
+console.log ("  XX> [end getting RSS feed call] (non-callback)");
+				
 
+// })
 
-
-
-
-
-
-// getNextGREword();
-sendEmail();
