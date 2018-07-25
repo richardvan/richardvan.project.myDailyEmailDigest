@@ -8,7 +8,7 @@ console.log ("   _todo_ : select random line start");
 //  [daily dog breed related]
 
 fs = require('fs');
-var CONST_file_dog_breeds_toy = "dog_breeds_toy.txt";
+var CONST_file_dog_breeds_toy = "dog_breeds.txt";
 
 //  note this will be async (aka blocking)
 function getRandomLine(filename){

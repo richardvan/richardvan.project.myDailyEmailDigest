@@ -13,7 +13,7 @@ function sendEmail(){
 	var from_email = new helper.Email('herokuDailyEmailDigest@shrouded-brook.com');
 	var to_email = new helper.Email('vanrichard@gmail.com');
 	var subject = '[myDailyEmailDigest] for ___todo_date_update___';
-	var content = new helper.Content('text/plain', 'Hello, Hong, time to put in quickly a bad looking version of your stuff and one gre word!');
+	var content = new helper.Content('text/plain', 'Hello, Hong, just put in daily dog breed on 7/24/18');
 	var mail = new helper.Mail(from_email, subject, to_email, content);
 
 	var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);

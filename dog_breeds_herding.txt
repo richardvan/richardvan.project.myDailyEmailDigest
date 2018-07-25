@@ -1,3 +1,0 @@
-"Australian Cattle Dog"	"https://www.akc.org/dog-breeds/australian-cattle-dog/"
-"Australian Shepherd"	"https://www.akc.org/dog-breeds/australian-shepherd/"
-"Bearded Collie"	"https://www.akc.org/dog-breeds/bearded-collie/"
