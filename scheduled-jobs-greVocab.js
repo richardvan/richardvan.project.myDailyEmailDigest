@@ -1,7 +1,7 @@
 // initially from http://www.modeo.co/blog/2015/1/8/heroku-scheduler-with-nodejs-tutorial
 
 function sayHello() {
-    console.log('[DEBUG] hello as of 7/24/18 - START_HERE_');
+    console.log('[DEBUG] hello as of 7/27/18 - START_HERE_');
 }
 
 var GLOBAL_quoteOfTheDay = "";
@@ -26,18 +26,19 @@ function classScheduleContent(){
 	if(today.getDay() == 0) 	// sunday - return everything to get an overview
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Sunday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
 							// '&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
-							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304(Molecular Genetics) 	1:00pm-2:15pm @ TBE B-174<br>' +
-							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM242(Organic Chemistry) 	4:00pm-5:15pm @ RBP102 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182(Physics 3)       1:00pm-2:15pm @ RGB 102 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    2:30pm-3:45pm @ TBE A-107 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    4:00pm-5:15pm @ WHI 197 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; UTA    (Histology)       5:00pm-8:00pm @ WHI 203 <br>' +
 							// '&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
 							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL490(Biogeography) 	    8:30am-9:45m @ WHI105 <br>' +
 							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology UTA) 	    1:00pm-3:50pm @ WHI202 <br>' +
-							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL480(Biological Modeling) 4:00pm-5:15pm @ TBE B-176 <br>' +
+							// // '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL480(Biological Modeling) 4:00pm-5:15pm @ TBE B-176 <br>' +
 							// '&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
-							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304D(Genetics D)         8:30am-11:15am @ BHS208 <br>' +
-							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL304(Molecular Genetics) 	1:00pm-2:15pm @ TBE B-174 <br>' +
-							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM242(Organic Chemistry) 	4:00pm-5:15pm @ RBP102 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182(Physics 3)       1:00pm-2:15pm @ RGB 102 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    2:30pm-3:45pm @ TBE A-107 <br>' +
+							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    4:00pm-5:15pm @ WHI 197 <br>' +
 							// '&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
 							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL490(Biogeography) 	    8:30am-9:45am @ WHI105 <br>' +
 							// '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL468(Histology UTA) 	    1:00pm-3:50pm @ WHI202 <br>' +
@@ -46,33 +47,43 @@ function classScheduleContent(){
 	else if (today.getDay() == 1) // monday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182(Physics 3)       1:00pm-2:15pm @ RGB 102 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    2:30pm-3:45pm @ TBE A-107 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL348(Anatomy)    		4:00pm-5:15pm @ WHI 197 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; UTA    (Histology)       5:00pm-8:00pm @ WHI 202 <br>' +
 							'';
 	else if (today.getDay() == 2) // tuesday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Tuesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM474(Biochem 1)       10:00pm-11:15pm @ CBC A108 <br>' +
 							'';
 	else if (today.getDay() == 3) // wednesday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351L(Microbio Lab)   8:00pm-11:15am @ RGB 102 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182(Physics 3)       1:00pm-2:15pm @ RGB 102 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    2:30pm-3:45pm @ TBE A-107 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL348(Anatomy)    		4:00pm-5:15pm @ WHI 197 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; UTA    (Histology)       5:00pm-8:00pm @ WHI 202 <br>' +
 							'';
 	else if (today.getDay() == 4) // thursday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM474(Biochem 1)       10:00pm-11:15pm @ CBC A108 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182L(Physics Lab)    4:30pm-7:15pm @ RGB 257 <br>' +
 							'';
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Friday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL347(Anatomy Lab)     2:30pm-5:15pm @ WHI 202 <br>' +
 							'';
 	else if (today.getDay() == 6) // saturday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Saturday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; _TODO_by_8_27_mondayFirstDay <br>' +
-							'';
+
+
+
+							'&ensp;&ensp;&ensp;&ensp;		     <b></b><br>' 		// last sentenct
 
 	return returnValue;
 }
@@ -145,9 +156,11 @@ function sendEmail(){
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [Educational/Science] <br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://avida-ed.msu.edu/avida-ed-application/">Avida</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="http://www.pnas.org/">National Academy of Sciences</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.nature.com/">Nature Journal</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.nature.com/">Nature</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://singularityhub.com/">Singlularity Hub</a> <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="http://www.sciencemag.org/">Science Journal</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="http://www.sciencemag.org/">Science</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="http://advances.sciencemag.org/">Science Advances</a> <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://academic.oup.com/bioinformatics">Bioinformatics</a> <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&#9634;     [Companies] <br>' + 
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; Lecture: <a href="https://www.unitedneuroscience.com/news/">United Neuroscience</a> <br>' +
 							'<br>' +
