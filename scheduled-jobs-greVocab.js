@@ -47,7 +47,6 @@ function classScheduleContent(){
 	else if (today.getDay() == 1) // monday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Monday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182(Physics 3)       1:00pm-2:15pm @ RGB 102 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    2:30pm-3:45pm @ TBE A-107 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL348(Anatomy)    		4:00pm-5:15pm @ WHI 197 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; UTA    (Histology)       5:00pm-8:00pm @ WHI 202 <br>' +
@@ -60,8 +59,7 @@ function classScheduleContent(){
 	else if (today.getDay() == 3) // wednesday
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Wednesday</b><br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351L(Microbio Lab)   8:00pm-11:15am @ RGB 102 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182(Physics 3)       1:00pm-2:15pm @ RGB 102 <br>' +
+							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351L(Microbio Lab)   8:00pm-11:15am @ WHI 313 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL351(Microbiology)    2:30pm-3:45pm @ TBE A-107 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; BIOL348(Anatomy)    		4:00pm-5:15pm @ WHI 197 <br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; UTA    (Histology)       5:00pm-8:00pm @ WHI 202 <br>' +
@@ -70,7 +68,6 @@ function classScheduleContent(){
 		returnValue = 		returnValue +
 							'&ensp;&ensp;&ensp;&ensp;		     <b>Thursday</b><br>' +
 							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; CHEM474(Biochem 1)       10:00pm-11:15pm @ CBC A108 <br>' +
-							'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &gt;&ensp; PHYS182L(Physics Lab)    4:30pm-7:15pm @ RGB 257 <br>' +
 							'';
 	else if (today.getDay() == 5) // friday
 		returnValue = 		returnValue +
